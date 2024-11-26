@@ -1,5 +1,5 @@
 import { useState, EventHandler, ReactNode , useEffect} from 'react'
-
+    
 import MedicalDiscussionImage1 from './assets/medical_discussion1.png';
 import MedicalDiscussionImage2 from './assets/medical_discussion2.png';
 
