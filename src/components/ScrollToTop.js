@@ -10,9 +10,9 @@ const ScrollToTop = () => {
   };
 
   return (
-    <div className="fixed bottom-4 right-4">
+    <div className="bottom-4 right-4">
       <button onClick={handleScrollToTop}
-        className="fixed bottom-80 right-10 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 transition duration-300"
+        className="bottom-80 right-10 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 transition duration-300"
       >
         <img src={btn_forTheTop} alt="Scroll to Top" width="30" height="30" />
       </button>

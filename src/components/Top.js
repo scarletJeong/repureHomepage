@@ -13,7 +13,7 @@ const Top = () => {
       </div>
       <div className="flex flex-row items-center justify-center gap-[80px]">
         {/* 메뉴 항목 */}
-        <Link to="/aboutus" className="text-[16px] leading-[24px] font-['Montserrat'] font-medium uppercase text-[#363636] text-center whitespace-nowrap">
+        <Link to="/aboutus-ceo" className="text-[16px] leading-[24px] font-['Montserrat'] font-medium uppercase text-[#363636] text-center whitespace-nowrap">
           About Us
         </Link>
         <Link to="/medicine" className="text-[16px] leading-[24px] font-['Montserrat'] font-medium uppercase text-[#363636] text-center whitespace-nowrap">

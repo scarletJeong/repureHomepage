@@ -18,6 +18,11 @@ import Cancer from './pages/RD/Cancer'
 // Support 관련 페이지
 import Map from './pages/Support/Map'
 
+// About us 관련 페이지
+import Ceo from './pages/AboutUs/Ceo';
+import History from './pages/AboutUs/History';
+import Partners from './pages/AboutUs/Partners';
+
 // CSS 파일
 import './index.css'; // Tailwind 설정 포함
 
@@ -30,6 +35,12 @@ function App() {
         
         {/* Test 페이지 */}
         <Route path="/test" element={<Test />} />
+
+        {/* AboutUs 페이지*/}
+
+          <Route path="/aboutus-ceo" element={<Ceo />} />
+          <Route path="/aboutus-history" element={<History />} />
+          <Route path="/aboutus-partners" element={<Partners />} />
 
         {/* Business 페이지 */}
         <Route path="/medicine" element={<Med />} />
