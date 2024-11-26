@@ -3,6 +3,7 @@ import { useState, EventHandler, ReactNode } from 'react'
 
 import Bottom from '../../components/Bottom'
 import Top from '../../components/Top'
+import RDTitle from '../../components/RDTitle'
 
 import img1 from '../../assets/Group 31213_1588.png'
 import img2 from '../../assets/Group 31213_1589.png'
@@ -17,20 +18,8 @@ import img8 from '../../assets/image 27213_1717.png'
 const Cancer = () => {
 	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] overflow-hidden">
 
-  {/*title */}
-  <div className="relative self-stretch h-[294px] shrink-0 bg-[#fff] overflow-hidden">
-    <div className="absolute -translate-x-1/2 left-1/2 top-[160px] flex flex-col items-center justify-start gap-[20px]">
-      <div className="text-[40px] leading-[50px] font-['Montserrat'] font-bold text-[#000] whitespace-nowrap">R&D</div>
-      <div className="flex flex-row items-center justify-start gap-[40px]">
-        <div className="flex flex-col items-center justify-start">
-          <div className="text-[18px] leading-[24px] font-['Pretendard'] text-transform-[uppercase] text-[#363636b2] text-center whitespace-nowrap">파이프라인</div>
-        </div>
-        <div className="flex flex-col items-center justify-start border-[solid] border-#2d4198 border border-[0_0_1px]">
-          <div className="text-[18px] leading-[24px] font-['Pretendard'] font-bold text-transform-[uppercase] text-[#2d4198] text-center whitespace-nowrap">항암치료</div>
-        </div>
-      </div>
-    </div>
-  </div>
+  {/*RnDtitle */}
+  <RDTitle activeTab="항암치료"  />
 
   <div className="relative self-stretch h-[2145px] shrink-0 bg-[#fff8f3] overflow-hidden">
     <div className="absolute -translate-x-1/2 left-1/2 top-[100px] flex flex-col items-center justify-start gap-[4px]">

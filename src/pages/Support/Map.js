@@ -11,6 +11,23 @@ import img5 from '../../assets/cdc-y--8fqaK1kY-unsplash 1169_1366.png'
 
 
 const Map = () => {
+
+   // State for input fields
+   const [formData, setFormData] = useState({
+    email: "",
+    subject: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+
 	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] overflow-hidden">
 
     {/*title */}
@@ -19,6 +36,7 @@ const Map = () => {
       <div className="text-[40px] leading-[50px] font-['Montserrat'] font-bold text-[#000] whitespace-nowrap">CONTACT</div>
     </div>
   </div>
+
   <div className="relative self-stretch h-[1006px] shrink-0 bg-[#fcfcfc] overflow-hidden">
     <div className="absolute left-[-208px] top-[119px] w-[2370px] h-[693px] flex">
       <div className="absolute left-0 top-[57px] w-[552px] h-[552px] border-[1px] border-solid border-[#e8e8e8] rounded-full"></div>
@@ -64,36 +82,8 @@ const Map = () => {
     </div>
     <img className="absolute -translate-x-1/2 left-[calc(50%+276px)] top-[192px]" width="809" height="500" src={img4}></img>
   </div>
-  <div className="relative self-stretch h-[841px] shrink-0 bg-[#fff] overflow-hidden">
-    <img className="absolute left-[-137px] top-[-51px]" width="2116" height="1220" src={img5}></img>
-    <div className="absolute -translate-x-1/2 left-1/2 top-[100px] flex flex-col items-center justify-start gap-[24px]">
-      <div className="self-stretch flex flex-col items-center justify-start gap-[4px]">
-        <div className="text-[16px] leading-[20px] font-['Pretendard'] font-medium text-[#c8c8c8] whitespace-nowrap">문의하기</div>
-        <div className="text-[36px] leading-[40px] font-['Montserrat'] font-semibold text-[#fff] whitespace-nowrap">INQUIRE</div>
-      </div>
-      <div className="text-[16px] leading-[24px] font-['Pretendard'] text-[#efefef] text-justify whitespace-nowrap">리퓨어 헬스케어에게 궁금한 문의사항을 보내주세요.</div>
-    </div>
-    <div className="absolute -translate-x-1/2 left-1/2 top-[252px] w-[803px] flex flex-wrap items-center justify-end gap-[20px]">
-      <div className="w-[391px] h-[50px] shrink-0 flex flex-row items-center justify-start py-[16px] px-[22px] bg-[#ffffff33] border-[1px] border-solid border-[#e2e8f0] rounded-[10px]">
-        <div className="text-[14px] font-['Pretendard'] font-medium text-transform-[capitalize] text-[#fff] whitespace-nowrap">Your Email</div>
-      </div>
-      <div className="w-[391px] h-[50px] shrink-0 flex flex-row items-center justify-start py-[16px] px-[22px] bg-[#ffffff33] border-[1px] border-solid border-[#e2e8f0] rounded-[10px]">
-        <div className="text-[14px] font-['Pretendard'] font-medium text-transform-[capitalize] text-[#fff] whitespace-nowrap">Your Email</div>
-      </div>
-      <div className="w-[391px] h-[50px] shrink-0 flex flex-row items-center justify-start py-[16px] px-[22px] bg-[#ffffff33] border-[1px] border-solid border-[#e2e8f0] rounded-[10px]">
-        <div className="text-[14px] font-['Pretendard'] font-medium text-transform-[capitalize] text-[#fff] whitespace-nowrap">Subject</div>
-      </div>
-      <div className="w-[391px] h-[50px] shrink-0 flex flex-row items-center justify-start py-[16px] px-[22px] bg-[#ffffff33] border-[1px] border-solid border-[#e2e8f0] rounded-[10px]">
-        <div className="text-[14px] font-['Pretendard'] font-medium text-transform-[capitalize] text-[#fff] whitespace-nowrap">Phone</div>
-      </div>
-      <div className="w-[803px] h-[250px] shrink-0 flex flex-row items-start justify-start py-[17px] px-[22px] bg-[#ffffff33] border-[1px] border-solid border-[#e2e8f0] rounded-[10px]">
-        <div className="text-[14px] font-['Pretendard'] font-medium text-transform-[capitalize] text-[#fff] whitespace-nowrap">Your Message</div>
-      </div>
-      <div className="flex flex-row items-center justify-center py-[10px] px-[40px] bg-[#fff] rounded-[33px]">
-        <div className="text-[12px] leading-[100%] font-['Pretendard'] text-[#000] whitespace-nowrap">문의하기</div>
-      </div>
-    </div>
-  </div>
+
+
 
     {/*bottom */}
     <Bottom />

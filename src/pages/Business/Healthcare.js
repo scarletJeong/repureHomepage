@@ -2,6 +2,7 @@ import { useState, EventHandler, ReactNode } from 'react'
 
 import Bottom from '../../components/Bottom'
 import Top from '../../components/Top'
+import BusinessTitle from '../../components/BusinessTitle'
 
 import img1 from '../../assets/Rectangle 70190_1218.png'
 import img2 from '../../assets/Rectangle 71190_1221.png'
@@ -18,29 +19,10 @@ import img10 from '../../assets/Group 29198_9930.png'
 
 const Healthcare = () => {
 	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] overflow-hidden">
-        {/*title */}
-  <div className="relative self-stretch h-[294px] shrink-0 bg-[#fff] overflow-hidden">
-    <div className="absolute -translate-x-1/2 left-1/2 top-[160px] flex flex-col items-center justify-start gap-[20px]">
-      <div className="text-[40px] leading-[50px] font-['Montserrat'] font-bold text-[#000] whitespace-nowrap">BUSINESS</div>
-      <div className="flex flex-row items-center justify-start gap-[40px]">
-        <div className="flex flex-col items-center justify-start">
-          <div className="text-[18px] leading-[24px] font-['Pretendard'] text-transform-[uppercase] text-[#363636b2] text-center whitespace-nowrap">의약사업</div>
-        </div>
-        <div className="flex flex-col items-center justify-start">
-          <div className="text-[18px] leading-[24px] font-['Pretendard'] text-transform-[uppercase] text-[#363636b2] text-center whitespace-nowrap">동물사업</div>
-        </div>
-        <div className="flex flex-col items-center justify-start border-[solid] border-#2d4198 border border-[0_0_1px]">
-          <div className="text-[18px] leading-[24px] font-['Pretendard'] font-semibold text-transform-[uppercase] text-[#2d4198] text-center whitespace-nowrap">헬스케어사업</div>
-        </div>
-        <div className="flex flex-col items-center justify-start">
-          <div className="text-[18px] leading-[24px] font-['Pretendard'] text-transform-[uppercase] text-[#363636b2] text-center whitespace-nowrap">식품사업</div>
-        </div>
-        <div className="flex flex-col items-center justify-start">
-          <div className="text-[18px] leading-[24px] font-['Pretendard'] text-transform-[uppercase] text-[#363636b2] text-center whitespace-nowrap">요양 및 진단사업</div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
+  {/*title */}
+  {/* Business Title */}
+  <BusinessTitle activeTab="헬스케어사업" />
 
 
   <div className="relative self-stretch h-[1500px] shrink-0 bg-[#fff] overflow-hidden">

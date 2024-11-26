@@ -2,6 +2,7 @@ import { useState, EventHandler, ReactNode } from 'react'
 
 import Bottom from '../../components/Bottom'
 import Top from '../../components/Top'
+import BusinessTitle from '../../components/BusinessTitle'
 
 import img1 from '../../assets/Rectangle 70195_2143.png'
 import img2 from '../../assets/Rectangle 71195_2146.png'
@@ -15,38 +16,15 @@ import img7 from '../../assets/img_bs_diagnostic195_2152.png'
 const Dig = () => {
 	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] overflow-hidden">
 
-         {/*title */}
-  <div className="relative self-stretch h-[294px] shrink-0 bg-[#fff] overflow-hidden">
-    <div className="absolute -translate-x-1/2 left-1/2 top-[160px] flex flex-col items-center justify-start gap-[20px]">
-      <div className="text-[40px] leading-[50px] font-['Montserrat'] font-bold text-[#000] whitespace-nowrap">BUSINESS</div>
-      <div className="flex flex-row items-center justify-start gap-[40px]">
-        <div className="flex flex-col items-center justify-start">
-          <div className="text-[18px] leading-[24px] font-['Pretendard'] text-transform-[uppercase] text-[#363636b2] text-center whitespace-nowrap">의약사업</div>
-        </div>
-        <div className="flex flex-col items-center justify-start">
-          <div className="text-[18px] leading-[24px] font-['Pretendard'] text-transform-[uppercase] text-[#363636b2] text-center whitespace-nowrap">동물사업</div>
-        </div>
-        <div className="flex flex-col items-center justify-start">
-          <div className="text-[18px] leading-[24px] font-['Pretendard'] text-transform-[uppercase] text-[#363636b2] text-center whitespace-nowrap">헬스케어사업</div>
-        </div>
-        <div className="flex flex-col items-center justify-start">
-          <div className="text-[18px] leading-[24px] font-['Pretendard'] text-transform-[uppercase] text-[#363636b2] text-center whitespace-nowrap">식품사업</div>
-        </div>
-        <div className="flex flex-col items-center justify-start border-[solid] border-#2d4198 border border-[0_0_1px]">
-          <div className="text-[18px] leading-[24px] font-['Pretendard'] font-semibold text-transform-[uppercase] text-[#2d4198] text-center whitespace-nowrap">요양 및 진단사업</div>
-        </div>
-      </div>
-    </div>
-  </div>
+  {/*title */}
+  {/* Business Title */}
+  <BusinessTitle activeTab="요양 및 진단사업" />
 
 
   <div className="relative self-stretch h-[2064px] shrink-0 bg-[#fff] overflow-hidden">
     <div className="absolute -translate-x-1/2 left-[calc(50%+454px)] top-[1496px] flex flex-col items-end justify-start gap-[20px]">
       <div className="text-[40px] leading-[50px] font-['Pretendard'] font-bold text-transform-[uppercase] text-[#000] text-right whitespace-nowrap">첨단 IOT기술 활용한<br/>새로운 단계의<br/>노후생활을 제안합니다</div>
       <div className="text-[16px] leading-[24px] font-['Pretendard'] text-[#888] text-right whitespace-nowrap">IOT 기반의 시설과 장비를 통해 환자들은 편리한 생활을 누릴 뿐만 아니라<br/>자신의 건강 상태를 관리하는 데에 도움을 받을 수 있습니다.<br/>리퓨어는 첨단 기술을 통해 요양산업의 새로운 패러다임을 제시합니다. </div>
-    </div>
-    <div className="absolute -translate-x-1/2 left-[calc(50%+612px)] top-[1778px] flex flex-row items-center justify-start py-[10px] px-[24px] bg-[#bfbfbf] rounded-[33px]">
-      <div className="text-[16px] leading-[100%] font-['Pretendard'] text-[#fff] whitespace-nowrap">PDF 다운로드</div>
     </div>
     <div className="absolute left-[828px] top-[1010px] flex flex-row items-center justify-start gap-[21px]">
       <div className="flex flex-col items-center justify-start gap-[6px]">

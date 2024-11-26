@@ -4,17 +4,21 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './Main';
 import Test from './pages/Home/Test';
 
+// Business 관련 페이지
 import Med from './pages/Business/Medicine'
 import Ani from './pages/Business/Animal'
 import Dig from './pages/Business/Dig'
 import Food from './pages/Business/Food'
 import Health from './pages/Business/Healthcare'
 
+// R&D 관련 페이지
 import Pipe from './pages/RD/Pipe'
 import Cancer from './pages/RD/Cancer'
 
+// Support 관련 페이지
 import Map from './pages/Support/Map'
 
+// CSS 파일
 import './index.css'; // Tailwind 설정 포함
 
 function App() {
