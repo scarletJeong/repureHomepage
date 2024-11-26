@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from './assets/logo7_5054.png'
+import logo from '../assets/logo7_5054.png'
 
 const Top = () => {
     return (

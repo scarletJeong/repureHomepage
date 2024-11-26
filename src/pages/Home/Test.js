@@ -1,27 +1,27 @@
 
 import { useState, useEffect } from 'react';
 
-import Bottom from './Bottom';
-import Top from './Top';
+import Bottom from '../../components/Bottom';
+import Top from '../../components/Top';
 
-import MedicalDiscussionImage1 from './assets/medical_discussion1.png';
-import MedicalDiscussionImage2 from './assets/medical_discussion2.png';
-import footer1 from './assets/footer1.png';
-import footer2 from './assets/footer2.png';
-import footer3 from './assets/footer3.png';
-import footer4 from './assets/footer4.png';
-import footer5 from './assets/footer5.png';
-import notice from './assets/04_notice166_360.png';
+import MedicalDiscussionImage1 from '../../assets/medical_discussion1.png';
+import MedicalDiscussionImage2 from '../../assets/medical_discussion2.png';
+import footer1 from '../../assets/footer1.png';
+import footer2 from '../../assets/footer2.png';
+import footer3 from '../../assets/footer3.png';
+import footer4 from '../../assets/footer4.png';
+import footer5 from '../../assets/footer5.png';
+import notice from '../../assets/04_notice166_360.png';
 
-import panel1 from './assets/panel1.png';
-import panel2 from './assets/panel2.png';
-import panel3 from './assets/panel3.png';
-import panel4 from './assets/panel4.png';
+import panel1 from '../../assets/panel1.png';
+import panel2 from '../../assets/panel2.png';
+import panel3 from '../../assets/panel3.png';
+import panel4 from '../../assets/panel4.png';
 
-import panel11 from './assets/panel1-1.png';
-import panel21 from './assets/panel2-1.png';
-import panel31 from './assets/panel3-1.png';
-import panel41 from './assets/panel4-1.png';
+import panel11 from '../../assets/panel1-1.png';
+import panel21 from '../../assets/panel2-1.png';
+import panel31 from '../../assets/panel3-1.png';
+import panel41 from '../../assets/panel4-1.png';
 
 
 const Test = () => {

@@ -1,11 +1,11 @@
 import ScrollToTop from './ScrollToTop'; 
 import React from 'react';
 
-import repurelogo from './assets/logo7_5054.png'
-import goLine from './assets/line7_5123.png'
-import goLinked from './assets/linkedin_icon.jpeg7_5135.png'
-import goNaverblog from './assets/image7_5136.png'
-import goOpentarget from './assets/opentarget 27_4974.png'
+import repurelogo from '../assets/logo7_5054.png'
+import goLine from '../assets/line7_5123.png'
+import goLinked from '../assets/linkedin_icon.jpeg7_5135.png'
+import goNaverblog from '../assets/image7_5136.png'
+import goOpentarget from '../assets/opentarget 27_4974.png'
 
 const Bottom = () => {
   return (

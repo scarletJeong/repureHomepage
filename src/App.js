@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './Main';
-import Test from './Test';
+import Test from './pages/Home/Test';
 import './index.css'; // Tailwind 설정 포함
 
 function App() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import btn_forTheTop from './assets/btn_forTheTop.png'; // 화살표 이미지 파일 경로
+import btn_forTheTop from '../assets/btn_forTheTop.png'; // 화살표 이미지 파일 경로
 
 const ScrollToTop = () => {
   const handleScrollToTop = () => {
