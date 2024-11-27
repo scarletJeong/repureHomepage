@@ -1,7 +1,8 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Main from './Main';
+
+// Main 관련 페이지
 import Test from './pages/Home/Test';
 
 // Business 관련 페이지
@@ -31,10 +32,8 @@ function App() {
     <Router>
       <Routes>
         {/* Main 페이지 */}
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Test />} />
         
-        {/* Test 페이지 */}
-        <Route path="/test" element={<Test />} />
 
         {/* AboutUs 페이지*/}
 
