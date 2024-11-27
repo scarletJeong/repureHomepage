@@ -1,4 +1,4 @@
-import { useState, EventHandler, ReactNode } from 'react'
+import { useState, EventHandler, ReactNode, useEffect } from 'react'
 
 import Bottom from '../../components/Bottom'
 import Top from '../../components/Top'
@@ -8,6 +8,8 @@ import img2 from '../../assets/ic169_1246.png'
 import img3 from '../../assets/ic169_1244.png'
 import img4 from '../../assets/Map169_1203.png'
 import img5 from '../../assets/cdc-y--8fqaK1kY-unsplash 1169_1366.png'
+
+const { kakao } = window;
 
 
 const Map = () => {
@@ -27,7 +29,24 @@ const Map = () => {
     });
   };
 
+  useEffect(()=>{
+    const container = document.getElementById('map');
+    const options = {
+        center : new kakao.maps.LatLng(37.468364, 126.886199),
+        level : 2
+    }
+    const map = new kakao.maps.Map(container,options);
+    const markerPosition = new kakao.maps.LatLng(37.468364, 126.886199);
 
+    const marker = new kakao.maps.Marker({
+      position:markerPosition
+    });
+
+    marker.setMap(map);
+
+  },[])
+
+  
 	return (<div className="w-[1920px] flex justify-start bg-[#fff] mx-auto  flex-col items-center">
 
     {/*title */}
@@ -44,13 +63,13 @@ const Map = () => {
       <div className="absolute left-[1906px] top-0 w-[464px] h-[464px] border-[1px] border-solid border-[#c0192d80] rounded-full"></div>
       <div className="absolute left-[1783px] top-[290px] w-[285px] h-[285px]"></div>
     </div>
-    <div className="absolute -translate-x-1/2 left-[calc(50%+192px)] top-[100px] flex flex-row items-center justify-start gap-[10px]">
+    {/* <div className="absolute -translate-x-1/2 left-[calc(50%+192px)] top-[100px] flex flex-row items-center justify-start gap-[10px]">
       <img width="32" height="32" src={img1}></img>
       <div className="flex flex-col items-start justify-center gap-[4px]">
         <div className="text-[20px] leading-[24px] font-['Pretendard'] font-semibold text-[#414141] text-justify whitespace-nowrap">(08594) 서울특별시 금천구 가산디지털1로 25, 18층 1806~1809호</div>
         <div className="text-[18px] leading-[24px] font-['Montserrat'] text-[#414141] text-justify whitespace-nowrap">18F, 25, Gasan digital 1-ro, Geumcheon-gu, Seoul, Republic of Korea</div>
       </div>
-    </div>
+    </div> */}
     <div className="absolute -translate-x-1/2 left-[calc(50%+-546px)] top-[618px] w-[267px] flex flex-col items-start justify-start gap-[10px]">
       <div className="flex flex-row items-center justify-start gap-[10px]">
         <img width="32" height="32" src={img2}></img>
@@ -80,7 +99,7 @@ const Map = () => {
       </div>
       <div className="text-[16px] leading-[24px] font-['Pretendard'] text-[#888] text-justify whitespace-nowrap">리퓨어헬스케어를 찾아오시는 길을 안내해드립니다.</div>
     </div>
-    <img className="absolute -translate-x-1/2 left-[calc(50%+276px)] top-[192px]" width="809" height="500" src={img4}></img>
+    <div id="map" style={{width: '809px', height: '500px', position: 'absolute', left: 'calc(50% + 276px)', transform: 'translateX(-50%)', top: '192px'}}></div>
   </div>
 
 
