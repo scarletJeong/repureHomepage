@@ -20,7 +20,7 @@ import img13 from '../../assets/Group 26195_2101.png'
 
 
 const Food = () => {
-	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] overflow-hidden">
+	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] mx-auto flex flex-col items-center">
  
   {/*title */}
   {/* Business Title */}

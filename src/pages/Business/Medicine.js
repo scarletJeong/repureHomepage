@@ -11,7 +11,7 @@ import medi3 from '../../assets/Rectangle 72184_563.png'
 
 
 const Medicine = () => {
-	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] overflow-hidden">
+	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] mx-auto flex flex-col items-center">
   
   {/*title */}
   {/* Business Title */}
@@ -76,7 +76,7 @@ const Medicine = () => {
         <img width="256" height="256" src={medi1}></img>
         <div className="text-[18px] leading-[24px] font-['Pretendard'] text-[#000] text-center whitespace-nowrap">의약품 수입 유통</div>
       </div>
-      <div className="w-[256px] shrink-0 flex flex-col items-center justify-start gap-[6px]">
+      <div className="flex flex-col items-center justify-start gap-[6px]">
         <img width="256" height="256" src={medi2}></img>
         <div className="self-stretch text-[18px] leading-[24px] font-['Pretendard'] text-[#000] text-center">신약 개발</div>
       </div>

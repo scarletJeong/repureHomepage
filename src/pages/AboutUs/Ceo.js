@@ -21,7 +21,7 @@ import AboutUsTitle from '../../components/AboutUsTitle';
 const Ceo = () => {
 
     return (
-        <div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] overflow-hidden">
+        <div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] mx-auto flex flex-col items-center">
             <AboutUsTitle activeTab="기업소개" />
             <div className="relative self-stretch h-[1647px] shrink-0 bg-[#fff] overflow-hidden">
                 <div className="absolute left-[-205px] top-[194px] w-[2294px] h-[1011px] flex">

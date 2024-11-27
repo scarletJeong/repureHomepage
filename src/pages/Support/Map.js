@@ -28,7 +28,7 @@ const Map = () => {
   };
 
 
-	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] overflow-hidden">
+	return (<div className="w-[1920px] flex justify-start bg-[#fff] mx-auto  flex-col items-center">
 
     {/*title */}
   <div className="relative self-stretch h-[294px] shrink-0 bg-[#fff] overflow-hidden">

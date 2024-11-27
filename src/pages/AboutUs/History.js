@@ -10,7 +10,7 @@ import AboutUsTitle from '../../components/AboutUsTitle';
 
 const History = () => {
   return (
-    <div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] overflow-hidden">
+    <div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] mx-auto flex flex-col items-center">
     <AboutUsTitle activeTab="연혁" />
 
 

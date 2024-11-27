@@ -18,7 +18,7 @@ import img10 from '../../assets/Group 29198_9930.png'
 
 
 const Healthcare = () => {
-	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] overflow-hidden">
+	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] mx-auto flex flex-col items-center">
   
   {/*title */}
   {/* Business Title */}

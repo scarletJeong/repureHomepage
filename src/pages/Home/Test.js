@@ -98,7 +98,7 @@ const Test = () => {
 
 
 
-	return (<div className="relative w-[1920px] h-[3660px] overflow-hidden">
+	return (<div className="relative w-[1920px] h-[3660px] mx-auto flex flex-col items-center">
   <div className="absolute left-0 top-0 w-[1920px] h-[4620px] flex flex-col items-start justify-start">
     
     

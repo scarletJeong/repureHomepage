@@ -18,7 +18,7 @@ import img11 from '../../assets/Frame 78213_887.png'
 
 
 const Pipe = () => {
-	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] overflow-hidden">
+	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] mx-auto flex flex-col items-center">
 
   {/*RD title */}
   <RDTitle activeTab="파이프라인"  />

@@ -72,7 +72,8 @@ const Bottom = () => {
    
     
     {/* 위로올라가는 화살표 */}
-    <div className="fixed left-0 bottom-[-110px] w-[1920px] h-[590px] flex flex-row items-end justify-end pt-0 pr-[180px] pb-[413px] pl-[200px]">
+    <div className="fixed right-20 bottom-10">
+
       <ScrollToTop />
     </div>
     

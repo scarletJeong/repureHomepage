@@ -14,7 +14,7 @@ import img7 from '../../assets/img_bs_diagnostic195_2152.png'
 
 
 const Dig = () => {
-	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] overflow-hidden">
+	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] mx-auto flex flex-col items-center">
 
   {/*title */}
   {/* Business Title */}
