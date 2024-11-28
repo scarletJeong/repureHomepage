@@ -11,7 +11,6 @@ import img5 from '../../assets/cdc-y--8fqaK1kY-unsplash 1169_1366.png'
 
 const { kakao } = window;
 
-
 const Map = () => {
 
    // State for input fields
@@ -28,6 +27,12 @@ const Map = () => {
       [e.target.name]: e.target.value,
     });
   };
+
+  useEffect(()=>{
+
+    window.scrollTo(0, 0);
+  
+  },[])
 
   useEffect(()=>{
     const container = document.getElementById('map');
@@ -64,7 +69,7 @@ const Map = () => {
       <div className="absolute left-[1783px] top-[290px] w-[285px] h-[285px]"></div>
     </div> */}
     <div className="absolute -translate-x-1/2 left-[calc(50%+192px)] top-[100px] flex flex-row items-center justify-start gap-[10px]">
-      {/* <img width="32" height="32" src={img1}></img> */}
+      <img width="32" height="32" src={img1}></img>
       <div className="flex flex-col items-start justify-center gap-[4px]">
         <div className="text-[20px] leading-[24px] font-['Pretendard'] font-semibold text-[#414141] text-justify whitespace-nowrap">(08594) 서울특별시 금천구 가산디지털1로 25, 18층 1806~1809호</div>
         <div className="text-[18px] leading-[24px] font-['Montserrat'] text-[#414141] text-justify whitespace-nowrap">18F, 25, Gasan digital 1-ro, Geumcheon-gu, Seoul, Republic of Korea</div>

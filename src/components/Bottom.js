@@ -1,5 +1,6 @@
 import ScrollToTop from './ScrollToTop'; 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import repurelogo from '../assets/logo7_5054.png'
 import goLine from '../assets/line7_5123.png'
@@ -8,6 +9,7 @@ import goNaverblog from '../assets/image7_5136.png'
 import goOpentarget from '../assets/opentarget 27_4974.png'
 
 const Bottom = () => {
+
   return (
 
     <div className="relative self-stretch h-[480px] shrink-0 bg-[#f8f8f8]">
@@ -43,7 +45,9 @@ const Bottom = () => {
       </div>
       <img width="0" height="12" src={goLine}></img>
       <div className="relative w-[52px] h-[18px] shrink-0">
-        <div className="absolute left-0 top-0 text-[15px] font-['Pretendard'] font-bold text-[#777] whitespace-nowrap">오시는길</div>
+        <Link to="/map">
+          <div className="absolute left-0 top-0 text-[15px] font-['Pretendard'] font-bold text-[#777] whitespace-nowrap">오시는길</div>
+        </Link>
       </div>
     </div>
     

@@ -66,19 +66,19 @@ const Partners = () => {
                     <div className="text-[20px] leading-[24px] font-['Montserrat'] font-bold text-[#000] text-justify whitespace-nowrap">Pharmaceutical Company</div>
                     <div className="text-[18px] leading-[24px] font-['Pretendard'] text-[#414141] text-justify whitespace-nowrap">해외 제약사</div>
                     </div>
-                    <div className="w-[806px] flex flex-wrap items-start justify-start gap-[19px]">
-                    <img width="256" height="100" src={logo01148_372}></img>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="156" height="82" src={image8149_431}></img>
+                    <div className="w-[806px] flex flex-wrap items-start justify-start">
+                    <img src={logo01148_372}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image8149_431}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="136" height="72" src={image8149_433}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image8149_433}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="204" height="62" src={image8149_435}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image8149_435}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="125" height="38" src={image8149_437}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image8149_437}></img>
                     </div>
                     </div>
                 </div>
@@ -87,24 +87,24 @@ const Partners = () => {
                     <div className="text-[20px] leading-[24px] font-['Montserrat'] font-bold text-[#000] text-justify whitespace-nowrap">Medical Facilities</div>
                     <div className="text-[18px] leading-[24px] font-['Pretendard'] text-[#414141] text-justify whitespace-nowrap">의료기관</div>
                     </div>
-                    <div className="w-[806px] flex flex-wrap items-start justify-start gap-[19px]">
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="128" height="38" src={image15149_461}></img>
+                    <div className="w-[806px] flex flex-wrap items-start justify-start">
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image15149_461}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="178" height="38" src={image149_449}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image149_449}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="174" height="48" src={image149_451}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image149_451}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="188" height="44" src={image149_445}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image149_445}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="208" height="44" src={image156_466}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image156_466}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="118" height="70" src={image156_475}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image156_475}></img>
                     </div>
                     </div>
                 </div>
@@ -113,36 +113,36 @@ const Partners = () => {
                     <div className="text-[20px] leading-[24px] font-['Montserrat'] font-bold text-[#000] text-justify whitespace-nowrap">Educational Institution</div>
                     <div className="text-[18px] leading-[24px] font-['Pretendard'] text-[#414141] text-justify whitespace-nowrap">교육기관</div>
                     </div>
-                    <div className="w-[806px] flex flex-wrap items-start justify-start gap-[19px]">
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="174" height="44" src={image158_584}></img>
+                    <div className="w-[806px] flex flex-wrap items-start justify-start">
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image158_584}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="170" height="44" src={image16158_586}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image16158_586}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="188" height="42" src={logo1158_588}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={logo1158_588}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="140" height="46" src={image158_590}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image158_590}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="146" height="38" src={image158_592}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image158_592}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="184" height="46" src={ image158_594}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={ image158_594}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="148" height="38" src={image158_596}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image158_596}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="146" height="48" src={image158_598}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image158_598}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="135" height="50" src={image20158_600}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image20158_600}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="174" height="36" src={image158_602}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image158_602}></img>
                     </div>
                     </div>
                 </div>
@@ -151,36 +151,36 @@ const Partners = () => {
                     <div className="text-[20px] leading-[24px] font-['Montserrat'] font-bold text-[#000] text-justify whitespace-nowrap">R&D</div>
                     <div className="text-[18px] leading-[24px] font-['Pretendard'] text-[#414141] text-justify whitespace-nowrap">연구개발</div>
                     </div>
-                    <div className="w-[806px] flex flex-wrap items-start justify-start gap-[19px]">
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="153" height="38" src={image158_609}></img>
+                    <div className="w-[806px] flex flex-wrap items-start justify-start">
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image158_609}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="170" height="44" src={image16158_611}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image16158_611}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="170" height="38" src={logo1158_613}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={logo1158_613}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="188" height="42" src={logo1161_860}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={logo1161_860}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="115" height="38" src={image158_615}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image158_615}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="150" height="34" src={image158_617}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image158_617}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="176" height="44" src={image158_619}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image158_619}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="174" height="38" src={image158_621}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image158_621}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="212" height="38" src={ image20158_625}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={ image20158_625}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="188" height="38" src={image158_623}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image158_623}></img>
                     </div>
                     </div>
                 </div>
@@ -189,42 +189,42 @@ const Partners = () => {
                     <div className="text-[20px] leading-[24px] font-['Montserrat'] font-bold text-[#000] text-justify whitespace-nowrap">Business Cooperation</div>
                     <div className="text-[18px] leading-[24px] font-['Pretendard'] text-[#414141] text-justify whitespace-nowrap">사업협력</div>
                     </div>
-                    <div className="w-[806px] flex flex-wrap items-start justify-start gap-[19px]">
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="154" height="42" src={image161_853}></img>
+                    <div className="w-[806px] flex flex-wrap items-start justify-start">
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image161_853}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="154" height="38" src={image161_835}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image161_835}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="146" height="38" src={image161_837}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image161_837}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="136" height="42" src={logo1161_839}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={logo1161_839}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="154" height="44" src={image161_856}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image161_856}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="132" height="38" src={image161_849}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image161_849}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="147" height="38" src={ image161_841}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={ image161_841}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="184" height="38" src={logo161_861}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={logo161_861}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="112" height="52" src={image161_851}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image161_851}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px] opacity-[.4]">
-                        <img width="150" height="34" src={image161_843}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center opacity-[.4]">
+                        <img src={image161_843}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="144" height="38" src={ image161_847}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={ image161_847}></img>
                     </div>
-                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center py-[31px] px-[81px]">
-                        <img width="136" height="46" src={image161_845}></img>
+                    <div className="w-[256px] h-[100px] shrink-0 flex flex-row items-center justify-center">
+                        <img src={image161_845}></img>
                     </div>
                     </div>
                 </div>

@@ -14,7 +14,7 @@ const AboutUsTitle = ({ activeTab }) => {
   return (
     <div className="relative self-stretch h-[294px] bg-[#fff]">
       <div className="absolute -translate-x-1/2 left-1/2 top-[160px] flex flex-col items-center gap-[20px]">
-        <div className="text-[40px] font-bold text-[#000]">ABOUT US</div>
+        <div className="text-[40px] font-['Montserrat'] font-bold text-[#000]">ABOUT US</div>
         <div className="flex flex-row gap-[40px]">
           {tabs.map((tab, index) => (
             <div

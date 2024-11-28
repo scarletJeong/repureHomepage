@@ -41,8 +41,8 @@ const Main = () => {
 
         {/* 슬라이드 텍스트 */}
         <div className="absolute text-center text-white p-4">
-          <h1 className="text-4xl font-bold">{slides[currentSlide].title}</h1>
-          <p className="text-xl mt-4">{slides[currentSlide].subtitle}</p>
+          <h1 className="text-4xl font-['Montserrat'] font-bold">{slides[currentSlide].title}</h1>
+          <p className="text-xl font-['Pretendard'] font-regular mt-4">{slides[currentSlide].subtitle}</p>
         </div>
 
         {/* 이전 버튼 */}
@@ -124,8 +124,8 @@ const Main = () => {
       {/*second*/}
       <div className="relative self-stretch h-[1080px] shrink-0 bg-[#fff]">
       <div className="absolute -translate-x-1/2 left-1/2 top-[180px] flex flex-col items-center justify-start gap-[4px]">
-        <div className="text-[16px] leading-[20px] font-['Pretendard'] font-medium text-[#2d4198] whitespace-nowrap">리퓨어 헬스케어 사업소개</div>
-        <div className="text-[40px] leading-[50px] font-['Montserrat'] font-bold text-[#000] whitespace-nowrap">OUR BUSINESS</div>
+        <div className="text-[16px] leading-[20px] font-[Pretendard] font-medium text-[#2d4198] whitespace-nowrap">리퓨어 헬스케어 사업소개</div>
+        <div className="text-[40px] leading-[50px] font-[Montserrat] font-bold text-[#000] whitespace-nowrap">OUR BUSINESS</div>
       </div>
       <div className="absolute -translate-x-1/2 left-1/2 top-[354px] w-[1920px] flex flex-row items-center justify-center gap-[18px] overflow-hidden">
         <div className="w-[180px] h-[600px] shrink-0 opacity-0"></div>

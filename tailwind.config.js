@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // React 파일들에서 Tailwind 사용 가능
   ],
   theme: {
-    extend: {}, // 필요 시 커스텀 설정
+    extend: {
+      fontFamily: {
+        Pretendard : ['Pretendard'],
+        Montserrat : ['Montserrat']
+      }
+    }, // 필요 시 커스텀 설정
   },
   plugins: [],
 }
