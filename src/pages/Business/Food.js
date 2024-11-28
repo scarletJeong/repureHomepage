@@ -47,17 +47,17 @@ const Food = () => {
     </div>
     <div className="absolute -translate-x-1/2 left-[calc(50%+276px)] top-[909px] w-[810px] h-[1px] bg-[#d9d9d9]"></div>
     <img className="absolute -translate-x-1/2 left-[calc(50%+-200px)] top-[100px]" width="960" height="600" src={img4}></img>
-    <div className="absolute -translate-x-1/2 left-[calc(50%+426px)] top-[379px] w-[508px] h-[321px] flex flex-col items-start justify-start p-[50px] bg-[linear-gradient(-111.3deg,#d67d72_0%,#70423b_100%)] rounded-t-0 rounded-b">
+    <div className="absolute -translate-x-1/2 left-[calc(50%+426px)] top-[379px] w-[508px] h-[321px] flex flex-col items-start justify-start p-[50px] bg-[linear-gradient(-111.3deg,#d67d72_0%,#70423b_100%)] rounded-tr-[80px] rounded-bl-[80px]">
       <div className="w-[408px] flex flex-col items-start justify-start gap-[24px]">
         <div className="self-stretch flex flex-col items-start justify-start gap-[4px]">
           <div className="text-[16px] leading-[20px] font-['Montserrat'] text-[#efefef] whitespace-nowrap">HEALTHCARE</div>
           <div className="text-[54px] leading-[64px] font-['Pretendard'] font-bold text-[#fff] whitespace-nowrap">식품사업</div>
         </div>
-        <div className="self-stretch text-[18px] leading-[24px] font-['Pretendard'] text-[#f8f8f8] text-justify">무엇을 먹느냐가 우리의 건강을 좌우합니다. 많은 질환들이 잘못된 식습관과 영양의 불균형으로부터 비롯됩니다. 리퓨어는 3D 프린팅 기술을 식품에 접목하여 건강하고 지속가능한 먹거리를 제공합니다.</div>
+        <div className="self-stretch text-[18px] leading-[24px] font-['Pretendard'] text-[#bfbfbf] text-justify">무엇을 먹느냐가 우리의 건강을 좌우합니다. 많은 질환들이 잘못된 식습관과 영양의 불균형으로부터 비롯됩니다. 리퓨어는 3D 프린팅 기술을 식품에 접목하여 건강하고 지속가능한 먹거리를 제공합니다.</div>
       </div>
     </div>
   </div>
-  <div className="relative self-stretch h-[927px] shrink-0 bg-[#ffdfdb]">
+  <div className="relative self-stretch h-[927px] shrink-0 bg-[#ffdfdb] overflow-hidden">
     <div className="absolute left-[-241px] top-0 w-[2547px] h-[867px] flex">
       <div className="absolute left-0 top-[231px] w-[622px] h-[636px] flex">
         <div className="absolute left-0 top-[0px] w-[552px] h-[552px] border-[1px] border-solid border-[#e8e8e8] rounded-full"></div>

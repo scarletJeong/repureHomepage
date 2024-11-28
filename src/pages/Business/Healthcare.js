@@ -7,7 +7,8 @@ import BusinessTitle from '../../components/BusinessTitle'
 import img1 from '../../assets/Rectangle 70190_1218.png'
 import img2 from '../../assets/Rectangle 71190_1221.png'
 import img3 from '../../assets/Rectangle 72190_1224.png'
-import img4 from '../../assets/panel3.png'
+import img4 from '../../assets/healthcare.png'
+//import img4 from '../../assets/panel3.png'
 import img5 from '../../assets/bg190_1292.png'
 import img6 from '../../assets/Group 27198_9720.png'
 import img7 from '../../assets/Group 27198_9760.png'
@@ -46,7 +47,7 @@ const Healthcare = () => {
       <div className="self-stretch text-[16px] leading-[24px] font-['Pretendard'] text-[#888] text-justify">리퓨어는 의료 네트워크를 활용하여 복약, 운동, 식이, 생활 습관 전반에 대한 통합 멘토링을 제공합니다.</div>
     </div>
     <img className="absolute -translate-x-1/2 left-[calc(50%+-200px)] top-[100px]" width="960" height="600" src={img4}></img>
-    <div className="absolute -translate-x-1/2 left-[calc(50%+426px)] top-[379px] w-[508px] h-[321px] flex flex-col items-start justify-start p-[50px] bg-[linear-gradient(68.23deg,#555057_0%,#826a8e_100%)] rounded-t-0 rounded-b">
+    <div className="absolute -translate-x-1/2 left-[calc(50%+426px)] top-[379px] w-[508px] h-[321px] flex flex-col items-start justify-start p-[50px] bg-[linear-gradient(68.23deg,#555057_0%,#826a8e_100%)] rounded-tr-[80px] rounded-bl-[80px]">
       <div className="w-[408px] flex flex-col items-start justify-start gap-[24px]">
         <div className="self-stretch flex flex-col items-start justify-start gap-[4px]">
           <div className="text-[16px] leading-[20px] font-['Montserrat'] text-[#efefef] whitespace-nowrap">HEALTHCARE</div>
@@ -58,20 +59,20 @@ const Healthcare = () => {
   </div>
   <div className="relative self-stretch h-[927px] shrink-0 bg-[#f2f2f2]">
     <img className="absolute left-0 top-0" width="1920" height="927" src={img5}></img>
-    <div className="absolute -translate-x-1/2 left-1/2 top-[437px] w-[502px] h-[2px] bg-[#fff]"></div>
     <div className="absolute -translate-x-1/2 left-1/2 top-[100px] flex flex-col items-center justify-start gap-[4px]">
       <div className="text-[16px] leading-[20px] font-['Pretendard'] font-medium text-[#000] whitespace-nowrap">리퓨어가 준비중인 헬스케어플랫폼</div>
       <div className="text-[54px] font-['Pretendard'] font-extrabold text-[#000] text-center whitespace-nowrap">순수한 건강을 위해 Pure, WithMe</div>
       <div className="text-[16px] leading-[24px] font-['Pretendard'] text-[#5f5f5f] text-center whitespace-nowrap">의료인과 만성질환자를 온라인으로 연결해주는 플랫폼으로 만성질환자에게 필요한 <br/>복약, 건강기능식품, 운동, 식이 등에 대한 종합적인 관리 서비스 제공</div>
     </div>
     <div className="absolute left-[570px] top-[340px] w-[780px] h-[200px] flex">
+    <div className="absolute -translate-x-1/2 left-1/2 top-[50%] w-[502px] h-[2px] bg-[#fff]"></div>
       <div className="absolute -translate-x-1/2 left-1/2 top-0 w-[200px] h-[200px] flex flex-col items-center justify-start">
         <img width="200" height="200" src={img6}></img>
       </div>
-      <div className="absolute -translate-x-1/2 left-[calc(50%+-320px)] top-[30px] flex flex-col items-center justify-start">
+      <div className="absolute -translate-x-1/2 left-[calc(50%-320px)] top-[30px] flex flex-col items-center justify-start">
         <img width="140" height="140" src={img7}></img>
       </div>
-      <div className="absolute -translate-x-1/2 left-[calc(50%+320px)] top-[30px] flex flex-col items-center justify-start">
+      <div className="absolute -translate-x-1/2 left-[calc(50%+320px)] top-[30px] flex flex-col items-center justify-start w-[140px]">
         <img width="140" height="140" src={img8}></img>
       </div>
       <div className="absolute -translate-x-1/2 left-[calc(50%+174px)] top-[119px] text-[14px] leading-[20px] font-['Pretendard'] font-semibold text-[#3994ff] text-center whitespace-nowrap">의료인 멘토링</div>
@@ -115,8 +116,8 @@ const Healthcare = () => {
         <div className="text-[18px] leading-[24px] font-['Pretendard'] text-[#414141] text-justify whitespace-nowrap">취침시간 및 수면 습관 관리</div>
       </div>
     </div>
-    <img className="absolute left-[764px] top-[422px]" width="43" height="32" src={img9}></img>
-    <img className="absolute left-[1113px] top-[422px]" width="43" height="32" src={img10}></img>
+    <img className="absolute left-[764px] top-[425px]" width="43" height="32" src={img9}></img>
+    <img className="absolute left-[1113px] top-[425px]" width="43" height="32" src={img10}></img>
   </div>
     {/*bottom */}
     <Bottom />

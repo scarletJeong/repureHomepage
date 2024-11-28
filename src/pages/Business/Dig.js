@@ -22,7 +22,7 @@ const Dig = () => {
 
 
   <div className="relative self-stretch h-[2064px] shrink-0 bg-[#fff] overflow-hidden">
-    <div className="absolute -translate-x-1/2 left-[calc(50%+454px)] top-[1496px] flex flex-col items-end justify-start gap-[20px]">
+    <div className="absolute -translate-x-1/2 left-[calc(50%+454px)] top-[1568px] flex flex-col items-end justify-start gap-[20px]">
       <div className="text-[40px] leading-[50px] font-['Pretendard'] font-bold text-transform-[uppercase] text-[#000] text-right whitespace-nowrap">첨단 IOT기술 활용한<br/>새로운 단계의<br/>노후생활을 제안합니다</div>
       <div className="text-[16px] leading-[24px] font-['Pretendard'] text-[#888] text-right whitespace-nowrap">IOT 기반의 시설과 장비를 통해 환자들은 편리한 생활을 누릴 뿐만 아니라<br/>자신의 건강 상태를 관리하는 데에 도움을 받을 수 있습니다.<br/>리퓨어는 첨단 기술을 통해 요양산업의 새로운 패러다임을 제시합니다. </div>
     </div>
@@ -57,13 +57,13 @@ const Dig = () => {
     </div>
     <div className="absolute -translate-x-1/2 left-[calc(50%+276px)] top-[909px] w-[810px] h-[1px] bg-[#d9d9d9]"></div>
     <img className="absolute -translate-x-1/2 left-[calc(50%+-200px)] top-[100px]" width="960" height="600" src={img7}></img>
-    <div className="absolute -translate-x-1/2 left-[calc(50%+426px)] top-[379px] w-[508px] h-[321px] flex flex-col items-start justify-start p-[50px] bg-[linear-gradient(-111.52deg,#825ca7_0%,#332441_100%)] rounded-t-0 rounded-b">
+    <div className="absolute -translate-x-1/2 left-[calc(50%+426px)] top-[379px] w-[508px] h-[321px] flex flex-col items-start justify-start p-[50px] bg-[linear-gradient(-111.52deg,#825ca7_0%,#332441_100%)] rounded-tr-[80px] rounded-bl-[80px]">
       <div className="w-[408px] flex flex-col items-start justify-start gap-[24px]">
         <div className="self-stretch flex flex-col items-start justify-start gap-[4px]">
           <div className="text-[16px] leading-[20px] font-['Montserrat'] text-[#efefef] whitespace-nowrap">DIAGNOSTIC</div>
           <div className="w-[352px] text-[54px] leading-[64px] font-['Pretendard'] font-bold text-[#fff]">요양 및 진단사업</div>
         </div>
-        <div className="self-stretch text-[18px] leading-[24px] font-['Pretendard'] text-[#f8f8f8] text-justify">치료와 예방의 시작은 진단에서부터 시작됩니다. <br/>리퓨어는 신속하고 정확한 진단으로 치료 및 예방 골든타임을 놓치지 않도록 여러 검사로 인류의 건강을 책입집니다.</div>
+        <div className="self-stretch text-[18px] leading-[24px] font-['Pretendard'] text-[#bfbfbf] text-justify">치료와 예방의 시작은 진단에서부터 시작됩니다. <br/>리퓨어는 신속하고 정확한 진단으로 치료 및 예방 골든타임을 놓치지 않도록 여러 검사로 인류의 건강을 책입집니다.</div>
       </div>
     </div>
   </div>

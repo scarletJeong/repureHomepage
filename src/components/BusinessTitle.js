@@ -6,11 +6,11 @@ const BusinessTitle = ({ activeTab }) => {
   const navigate = useNavigate();
 
   const tabs = [
-    { label: "의약사업", path: "/medicine" },
-    { label: "동물사업", path: "/animal" },
-    { label: "헬스케어사업", path: "/healthcare" },
-    { label: "식품사업", path: "/food" },
-    { label: "요양 및 진단사업", path: "/dig" },
+    { label: "의약사업", path: "/business-medicine" },
+    { label: "동물사업", path: "/business-animal" },
+    { label: "헬스케어사업", path: "/business-healthcare" },
+    { label: "식품사업", path: "/business-food" },
+    { label: "요양 및 진단사업", path: "/business-dig" },
   ];
 
   return (

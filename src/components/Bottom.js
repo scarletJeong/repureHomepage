@@ -18,22 +18,22 @@ const Bottom = () => {
         <div className="flex flex-col items-start justify-start gap-[2px]">
             <div className="flex flex-row items-center justify-start gap-[4px]">
                 <div className="w-[24px] h-[20px] text-[12px] leading-[20px] font-['Pretendard'] font-medium text-[#5f6368]">대표</div>
-                <div className="text-[12px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368] whitespace-nowrap">:</div>
-                <div className="text-[12px] leading-[20px] font-['Pretendard'] font-medium text-[#5f6368] whitespace-nowrap">김용상, 이재휘</div>
+                <div className="text-[13px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368] whitespace-nowrap">:</div>
+                <div className="text-[13px] leading-[20px] font-['Pretendard'] font-medium text-[#5f6368] whitespace-nowrap">김용상, 이재휘</div>
             </div>
             <div className="flex flex-row items-center justify-start gap-[4px]">
                 <div className="w-[24px] h-[20px] text-[12px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368]">TEL</div>
-                <div className="text-[12px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368] whitespace-nowrap">:</div>
-                <div className="text-[12px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368] whitespace-nowrap">02-3473-3001</div>
+                <div className="text-[13px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368] whitespace-nowrap">:</div>
+                <div className="text-[13px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368] whitespace-nowrap">02-3473-3001</div>
             </div>
             <div className="flex flex-row items-center justify-start gap-[4px]">
                 <div className="w-[24px] h-[20px] text-[12px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368]">FAX</div>
-                <div className="text-[12px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368] whitespace-nowrap">:</div>
-                <div className="text-[12px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368] whitespace-nowrap">02-3472-3007</div>
+                <div className="text-[13px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368] whitespace-nowrap">:</div>
+                <div className="text-[13px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368] whitespace-nowrap">02-3472-3007</div>
             </div>
-            <div className="text-[12px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368] whitespace-nowrap">public@repurels.com</div>
+            <div className="text-[13px] leading-[20px] font-['Montserrat'] font-medium text-[#5f6368] whitespace-nowrap">public@repurels.com</div>
         </div>
-        <div className="self-stretch text-[10px] leading-[20px] font-['Montserrat'] font-medium text-[#a5a5a5]">© 2024 REPUREHEALTHCARE. All Rights Reserved.</div>
+        <div className="self-stretch text-[12px] leading-[20px] font-['Montserrat'] font-medium text-[#a5a5a5]">© 2024 REPUREHEALTHCARE. All Rights Reserved.</div>
     </div>
     
     <img className="absolute left-[280px] top-[100px]" width="167" height="44" src={repurelogo}></img>
@@ -45,7 +45,7 @@ const Bottom = () => {
       </div>
       <img width="0" height="12" src={goLine}></img>
       <div className="relative w-[52px] h-[18px] shrink-0">
-        <Link to="/map">
+        <Link to="/contact-map">
           <div className="absolute left-0 top-0 text-[15px] font-['Pretendard'] font-bold text-[#777] whitespace-nowrap">오시는길</div>
         </Link>
       </div>

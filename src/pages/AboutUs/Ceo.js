@@ -12,6 +12,7 @@ import rectangle63166_759 from '../../assets/Rectangle_63166_759.png'
 import vector243_684 from '../../assets/Vector243_684.png'
 import image28243_665 from '../../assets/image28243_665.png'
 import img_line from '../../assets/img_line.png'
+import ceo_line from '../../assets/ceoLine.png'
 
 import AboutUsTitle from '../../components/AboutUsTitle';
 
@@ -105,7 +106,7 @@ const Ceo = () => {
                 </div>
                 </div>
             </div>
-            <div className="relative self-stretch h-[809px] shrink-0 bg-[#f6f6f6]">
+            <div className="relative self-stretch h-[809px] shrink-0 bg-[#f6f6f6] overflow-hidden">
                 <div className="absolute left-[-432px] top-[-60px] w-[2527px] h-[940px] flex">
                 <div className="absolute left-0 top-[318px] w-[622px] h-[622px] flex">
                     <div className="absolute left-0 top-[0px] w-[552px] h-[552px] border-[1px] border-solid border-[#d1d1d1] rounded-full"></div>
@@ -116,9 +117,10 @@ const Ceo = () => {
                     <div className="absolute right-0 top-0 w-[464px] h-[464px] border-[1px] border-solid border-[#c0192d80] rounded-full opacity-[.3]"></div>
                 </div>
                 </div>
-                <div className="absolute -translate-x-1/2 left-[calc(50%+-679px)] top-[224px] w-[230px] h-[1px] bg-[#d9d9d9]"></div>
-                <div className="absolute left-[831px] top-[246px] w-[809px] h-[400px] flex">
-                <div className="absolute -translate-x-1/2 left-[calc(50%+-4px)] top-[32px] w-[663px] h-[181px] border-[1px] border-solid border-[#dbe2ff]"></div>
+                <div className="absolute -translate-x-1/2 left-[calc(50%+-679px)] top-[336px] w-[230px] h-[1px] bg-[#d9d9d9] rotate-90"></div>
+                <div className="absolute left-[831px] top-[246px] w-[809px] flex justify-center">
+                    <img className="mt-[32px]" width="663" height="180" src = {ceo_line} />
+                {/* <div className="absolute -translate-x-1/2 left-[calc(50%+-4px)] top-[32px] w-[663px] h-[181px] border-[1px] border-solid border-[#dbe2ff]"></div> */}
                 <div className="absolute -translate-x-1/2 left-[calc(50%+-332px)] top-[208px] w-[145px] h-[36px] flex flex-row items-center justify-center py-[8px] px-[24px] bg-[#122e70] border-[2px] border-solid border-[#122e70] rounded-[50px]">
                     <div className="text-[14px] leading-[20px] font-['Pretendard'] font-medium text-[#fff] whitespace-nowrap">의약사업본부</div>
                 </div>

@@ -42,18 +42,18 @@ function App() {
           <Route path="/aboutus-partners" element={<Partners />} />
 
         {/* Business 페이지 */}
-        <Route path="/medicine" element={<Med />} />
-        <Route path="/animal" element={<Ani />} />
-        <Route path="/dig" element={<Dig />} />
-        <Route path="/food" element={<Food />} />
-        <Route path="/healthcare" element={<Health />} />
+        <Route path="/business-medicine" element={<Med />} />
+        <Route path="/business-animal" element={<Ani />} />
+        <Route path="/business-dig" element={<Dig />} />
+        <Route path="/business-food" element={<Food />} />
+        <Route path="/business-healthcare" element={<Health />} />
 
         {/* RnD 페이지 */}
-        <Route path="/pipe" element={<Pipe />} />
-        <Route path="/cancer" element={<Cancer />} />
+        <Route path="/rnd-pipe" element={<Pipe />} />
+        <Route path="/rnd-cancer" element={<Cancer />} />
 
          {/* Support 페이지 */}
-         <Route path="/map" element={<Map />} />
+         <Route path="/contact-map" element={<Map />} />
 
 
       </Routes>

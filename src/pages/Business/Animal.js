@@ -56,18 +56,18 @@ const Animal = () => {
     </div>
     <div className="absolute -translate-x-1/2 left-[calc(50%+276px)] top-[909px] w-[810px] h-[1px] bg-[#d9d9d9]"></div>
     <img className="absolute -translate-x-1/2 left-[calc(50%+-200px)] top-[100px]" width="960" height="600" src={dog4}></img>
-    <div className="absolute -translate-x-1/2 left-[calc(50%+426px)] top-[379px] w-[508px] h-[321px] flex flex-col items-start justify-start p-[50px] bg-[linear-gradient(68.23deg,#3b312b_0%,#a18774_100%)] rounded-t-0 rounded-b">
+    <div className="absolute -translate-x-1/2 left-[calc(50%+426px)] top-[379px] w-[508px] h-[321px] flex flex-col items-start justify-start p-[50px] bg-[linear-gradient(68.23deg,#3b312b_0%,#a18774_100%)] rounded-tr-[80px] rounded-bl-[80px]">
       <div className="w-[408px] flex flex-col items-start justify-start gap-[24px]">
         <div className="self-stretch flex flex-col items-start justify-start gap-[4px]">
           <div className="text-[16px] leading-[20px] font-['Montserrat'] text-[#efefef] whitespace-nowrap">ANIMAL</div>
           <div className="text-[54px] leading-[64px] font-['Pretendard'] font-bold text-[#fff] whitespace-nowrap">동물사업</div>
         </div>
-        <div className="self-stretch text-[18px] leading-[24px] font-['Pretendard'] text-[#f5f5f5] text-justify">개와 고양이는 더이상 우리를 즐겁게 해주는 애완동물이 아니라 여생을 함께하는 반려동물이 되었습니다. 리퓨어는 반려동물이 건강하게 우리 곁에 머무를 수 있도록 정확한 진단을 바탕으로 동물의약품과 식품, 서비스를 제공합니다.</div>
+        <div className="self-stretch text-[18px] leading-[24px] font-['Pretendard'] text-[#bfbfbf] text-justify">개와 고양이는 더이상 우리를 즐겁게 해주는 애완동물이 아니라 여생을 함께하는 반려동물이 되었습니다. 리퓨어는 반려동물이 건강하게 우리 곁에 머무를 수 있도록 정확한 진단을 바탕으로 동물의약품과 식품, 서비스를 제공합니다.</div>
       </div>
     </div>
   </div>
-  <div className="relative self-stretch h-[943px] shrink-0 bg-[#f2f2f2]">
-    <img className="absolute left-[-14px] top-0" width="1947" height="1005" src={img1}></img>
+  <div className="relative self-stretch h-[943px] shrink-0 bg-[#f2f2f2] overflow-hidden">
+    <img className="absolute top-0" width="1947" height="1005" src={img1}></img>
     <div className="absolute -translate-x-1/2 left-1/2 top-[276px] w-[880px] flex flex-wrap items-start justify-start gap-[20px]">
       <div className="relative w-[160px] h-[160px] shrink-0">
         <img className="absolute left-0 top-0" width="160" height="160" src={img2}></img>

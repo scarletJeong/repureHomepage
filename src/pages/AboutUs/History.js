@@ -6,6 +6,8 @@ import Top from '../../components/Top'
 
 import AboutUsTitle from '../../components/AboutUsTitle';
 
+import historyLine from '../../assets/historyLine.png'
+
 
 
 const History = () => {
@@ -15,16 +17,8 @@ const History = () => {
 
 
   <div className="w-[2262px] h-[2462px] relative bg-white">
-        <div className="w-[2262px] h-[1701.60px] left-[-140px] top-[216px] absolute">
-          <div className="w-[538px] h-[657.60px] left-[1724px] top-[1044px] absolute">
-            <div className="w-[482px] h-[482px] left-[56px] top-0 absolute bg-neutral-50 rounded-full" />
-          </div>
-          <div className="w-[527px] h-[464px] left-0 top-0 absolute">
-            <div className="w-[222px] h-[194.51px] left-0 top-[256.25px] absolute justify-center items-center inline-flex" />
-            <div className="w-[464px] h-[464px] left-[63px] top-0 absolute opacity-30 rounded-full border border-[#c0192d]/50" />
-          </div>
-        </div>
-        <div className="left-[316px] top-[120px] absolute justify-start items-start gap-20 inline-flex">
+    <img className="left-[460px] top-[100px] absolute" src = {historyLine} />
+        <div className="left-[500px] top-[120px] absolute justify-start items-start gap-20 inline-flex">
           <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2022</div>
           <div className="flex-col justify-start items-start inline-flex">
             <div className="w-[88px] h-10 relative" />
@@ -38,7 +32,7 @@ const History = () => {
             </div>
           </div>
         </div>
-        <div className="left-[316px] top-[270px] absolute justify-start items-start gap-20 inline-flex">
+    <div className="left-[500px] top-[270px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2021</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -50,7 +44,7 @@ const History = () => {
       </div>
     </div>
   </div>
-  <div className="left-[316px] top-[480px] absolute justify-start items-start gap-20 inline-flex">
+  <div className="left-[500px] top-[480px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2020</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -61,7 +55,7 @@ const History = () => {
       </div>
     </div>
   </div>
-  <div className="left-[316px] top-[660px] absolute justify-start items-start gap-20 inline-flex">
+  <div className="left-[500px] top-[660px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2019</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -72,7 +66,7 @@ const History = () => {
       </div>
     </div>
   </div>
-  <div className="left-[316px] top-[840px] absolute justify-start items-start gap-20 inline-flex">
+  <div className="left-[500px] top-[840px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2018</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -82,7 +76,7 @@ const History = () => {
       </div>
     </div>
   </div>
-  <div className="left-[316px] top-[990px] absolute justify-start items-start gap-20 inline-flex">
+  <div className="left-[500px] top-[990px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2017</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -91,7 +85,7 @@ const History = () => {
       </div>
     </div>
   </div>
-  <div className="left-[316px] top-[1110px] absolute justify-start items-start gap-20 inline-flex">
+  <div className="left-[500px] top-[1110px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2016</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -101,7 +95,7 @@ const History = () => {
       </div>
     </div>
   </div>
-  <div className="left-[316px] top-[1260px] absolute justify-start items-start gap-20 inline-flex">
+  <div className="left-[500px] top-[1260px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2015</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -110,7 +104,7 @@ const History = () => {
       </div>
     </div>
   </div>
-  <div className="left-[316px] top-[1400px] absolute justify-start items-start gap-20 inline-flex">
+  <div className="left-[500px] top-[1400px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2014</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -119,7 +113,7 @@ const History = () => {
       </div>
     </div>
   </div>
-  <div className="left-[316px] top-[1520px] absolute justify-start items-start gap-20 inline-flex">
+  <div className="left-[500px] top-[1520px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2013</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -128,7 +122,7 @@ const History = () => {
       </div>
     </div>
   </div>
-  <div className="left-[316px] top-[1640px] absolute justify-start items-start gap-20 inline-flex">
+  <div className="left-[500px] top-[1640px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2012</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -138,7 +132,7 @@ const History = () => {
       </div>
     </div>
   </div>
-  <div className="left-[316px] top-[1790px] absolute justify-start items-start gap-20 inline-flex">
+  <div className="left-[500px] top-[1790px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2011</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -149,7 +143,7 @@ const History = () => {
       </div>
     </div>
   </div>
-  <div className="left-[318px] top-[1970px] absolute justify-start items-start gap-20 inline-flex">
+  <div className="left-[500px] top-[1970px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2010</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -159,7 +153,7 @@ const History = () => {
       </div>
     </div>
   </div>
-  <div className="left-[318px] top-[2120px] absolute justify-start items-start gap-20 inline-flex">
+  <div className="left-[500px] top-[2120px] absolute justify-start items-start gap-20 inline-flex">
     <div className="w-[120px] text-black text-4xl font-semibold font-['Montserrat'] leading-10">2004<br/>-2009</div>
     <div className="flex-col justify-start items-start inline-flex">
       <div className="w-[88px] h-10 relative" />
@@ -174,65 +168,6 @@ const History = () => {
     </div>
   </div>
   
-  <div className="w-4 h-[2053px] left-[280px] top-[100px] absolute">
-    <div className="w-[2053px] h-px left-[7px] top-[2053px] absolute origin-top-left -rotate-90 bg-white border border-[#88d1f5]" />
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[47px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[198px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[408px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[588px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[768px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[918px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[1038px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[1188px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[1328px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[1448px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[1568px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[1718px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[1898px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-    <div className="origin-top-left -rotate-90 w-4 h-4 left-0 top-[2048px] absolute">
-      <div className="w-4 h-4 left-0 top-0 absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-      <div className="w-1.5 h-1.5 left-[5px] top-[-5px] absolute origin-top-left -rotate-90 bg-white rounded-full border border-[#88d1f5]" />
-    </div>
-  </div>
 
       </div>
 
@@ -241,7 +176,7 @@ const History = () => {
 
 {/* top */}
 <Top />
-    </div>
+    // </div>
   );
 };
 
