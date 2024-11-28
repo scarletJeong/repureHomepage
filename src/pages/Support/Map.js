@@ -57,19 +57,19 @@ const Map = () => {
   </div>
 
   <div className="relative self-stretch h-[1006px] shrink-0 bg-[#fcfcfc] overflow-hidden">
-    <div className="absolute left-[-208px] top-[119px] w-[2370px] h-[693px] flex">
+    {/* <div className="absolute left-[-208px] top-[119px] w-[2370px] h-[693px] flex">
       <div className="absolute left-0 top-[57px] w-[552px] h-[552px] border-[1px] border-solid border-[#e8e8e8] rounded-full"></div>
       <div className="absolute left-[292px] top-[536px] w-[139px] h-[139px] border-[1px] border-solid border-[#2f3474] rounded-full"></div>
       <div className="absolute left-[1906px] top-0 w-[464px] h-[464px] border-[1px] border-solid border-[#c0192d80] rounded-full"></div>
       <div className="absolute left-[1783px] top-[290px] w-[285px] h-[285px]"></div>
-    </div>
-    {/* <div className="absolute -translate-x-1/2 left-[calc(50%+192px)] top-[100px] flex flex-row items-center justify-start gap-[10px]">
-      <img width="32" height="32" src={img1}></img>
+    </div> */}
+    <div className="absolute -translate-x-1/2 left-[calc(50%+192px)] top-[100px] flex flex-row items-center justify-start gap-[10px]">
+      {/* <img width="32" height="32" src={img1}></img> */}
       <div className="flex flex-col items-start justify-center gap-[4px]">
         <div className="text-[20px] leading-[24px] font-['Pretendard'] font-semibold text-[#414141] text-justify whitespace-nowrap">(08594) 서울특별시 금천구 가산디지털1로 25, 18층 1806~1809호</div>
         <div className="text-[18px] leading-[24px] font-['Montserrat'] text-[#414141] text-justify whitespace-nowrap">18F, 25, Gasan digital 1-ro, Geumcheon-gu, Seoul, Republic of Korea</div>
       </div>
-    </div> */}
+    </div>
     <div className="absolute -translate-x-1/2 left-[calc(50%+-546px)] top-[618px] w-[267px] flex flex-col items-start justify-start gap-[10px]">
       <div className="flex flex-row items-center justify-start gap-[10px]">
         <img width="32" height="32" src={img2}></img>

@@ -11,7 +11,7 @@ const Top = () => {
       <div className="relative w-[192px] h-[50px] shrink-0 mx-auto  flex-col items-center">
 
         {/* 로고를 클릭하면 test 페이지로 이동 */}
-        <Link to="/" className="absolute top-0 w-[192px] h-[48px] overflow-hidden ml-[-600px]">
+        <Link to="/" className="absolute top-0 w-[192px] h-[48px] ml-[-600px]">
           <img className="absolute left-0 top-0" width="192" height="48" src={logo} alt="Logo" />
         </Link>
         
