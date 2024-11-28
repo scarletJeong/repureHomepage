@@ -6,8 +6,8 @@ const RDTitle = ({ activeTab }) => {
  const navigate = useNavigate();
 
  const tabs = [
-    {label : '파이프라인', path : '/pipe'},
-    {label : '항암치료', path : '/cancer'}
+    {label : '파이프라인', path : '/rnd-pipe'},
+    {label : '항암치료', path : '/rnd-cancer'}
  ];
 
  return ( 
