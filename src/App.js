@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import ScrollToTop from "./components/ScrollToTop";
 // Main 관련 페이지
 import Test from './pages/Home/Test';
 
@@ -24,19 +24,20 @@ import Ceo from './pages/AboutUs/Ceo';
 import History from './pages/AboutUs/History';
 import Partners from './pages/AboutUs/Partners';
 
+import Privacy from './components/privacy';
+
 // CSS 파일
 import './index.css'; // Tailwind 설정 포함
 
 function App() {
   return (
-    <Router>
+    <Router> 
       <Routes>
+
         {/* Main 페이지 */}
         <Route path="/" element={<Test />} />
         
-
         {/* AboutUs 페이지*/}
-
           <Route path="/aboutus-ceo" element={<Ceo />} />
           <Route path="/aboutus-history" element={<History />} />
           <Route path="/aboutus-partners" element={<Partners />} />
@@ -52,9 +53,10 @@ function App() {
         <Route path="/rnd-pipe" element={<Pipe />} />
         <Route path="/rnd-cancer" element={<Cancer />} />
 
-         {/* Support 페이지 */}
-         <Route path="/contact-map" element={<Map />} />
+        {/* Support 페이지 */}
+        <Route path="/contact-map" element={<Map />} />
 
+        <Route path="/privacy" element={<Privacy />} />
 
       </Routes>
     </Router>

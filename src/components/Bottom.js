@@ -41,7 +41,9 @@ const Bottom = () => {
     
     <div className="absolute left-[1434px] top-[279px] flex flex-row items-center justify-start gap-[24px]">
       <div className="relative w-[104px] h-[18px] shrink-0">
-        <div className="absolute left-0 top-0 text-[15px] font-['Pretendard'] font-bold text-[#777] whitespace-nowrap">개인정보처리방침</div>
+        <Link to="/privacy">
+          <div className="absolute left-0 top-0 text-[15px] font-['Pretendard'] font-bold text-[#777] whitespace-nowrap">개인정보처리방침</div>
+          </Link>
       </div>
       <img width="0" height="12" src={goLine}></img>
       <div className="relative w-[52px] h-[18px] shrink-0">
@@ -49,7 +51,11 @@ const Bottom = () => {
           <div className="absolute left-0 top-0 text-[15px] font-['Pretendard'] font-bold text-[#777] whitespace-nowrap">오시는길</div>
         </Link>
       </div>
+      
     </div>
+
+
+
     
     {/* Social Media */}
     <div className="absolute left-[1434px] top-[105px] flex flex-row items-center justify-start gap-[20px] z-10">
@@ -71,15 +77,9 @@ const Bottom = () => {
         <img src={goOpentarget} alt="Open Target" className="w-[81px] h-[24px]" />
       </a>
     </div>
-
-
-   
     
-    {/* 위로올라가는 화살표 */}
-    <div className="fixed right-20 bottom-10">
-
-      <ScrollToTop />
-    </div>
+    {/*스크롤 */}
+    <ScrollToTop />
     
     </div>
 
