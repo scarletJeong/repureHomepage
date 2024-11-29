@@ -1,0 +1,12 @@
+#partners {
+    animation: webscrollAnimation 120s linear infinite;
+}
+
+@keyframes webscrollAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
