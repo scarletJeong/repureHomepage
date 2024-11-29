@@ -3,7 +3,7 @@ import { useState, EventHandler, ReactNode } from 'react'
 import Bottom from './Bottom'
 import Top from './Top'
 
-const 개인정보처리방침 = () => {
+const privacy = () => {
 	return (<div className="w-[1920px] h-[5553px] flex flex-col items-start justify-start bg-[#fff] mx-auto  flex-col items-center">
   <div className="relative self-stretch h-[294px] shrink-0 bg-[#fff] overflow-hidden">
     <div className="absolute -translate-x-1/2 left-1/2 top-[160px] flex flex-col items-center justify-start">
@@ -26,4 +26,4 @@ const 개인정보처리방침 = () => {
 </div>)
 }
 
-export default 개인정보처리방침
+export default privacy;
