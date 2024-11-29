@@ -1,22 +1,31 @@
-import React from 'react';
-import btn_forTheTop from '../assets/btn_forTheTop.png'; // 화살표 이미지 파일 경로
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import btn_forTheTop from '../assets/btn_forTheTop.png'; 
 
 const ScrollToTop = () => {
+  const { pathname } = useLocation(); 
+  
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', 
+    });
+  }, [pathname]); 
+
+
   const handleScrollToTop = () => {
     window.scrollTo({
-      top: 0, // 페이지 맨 위로 이동
-      behavior: 'smooth', // 부드럽게 스크롤
+      top: 0,
+      behavior: 'smooth',
     });
   };
 
   return (
-    <div className="bottom-4 ">
-      <button onClick={handleScrollToTop}
-        className="bottom-80 right-10 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 transition duration-300"
-      >
-        <img src={btn_forTheTop} alt="Scroll to Top" width="30" height="30" />
-      </button>
-    </div>
+   <button
+      onClick={handleScrollToTop}
+      className="scroll__container bottom-0 right-0 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-800 transition duration-300" style={{width: "60px", height : "60px", display: "flex", alignItems: "center", justifyContent: "center"}}>
+      <img src={btn_forTheTop} alt="Scroll to Top" /> 
+    </button>
   );
 };
 
