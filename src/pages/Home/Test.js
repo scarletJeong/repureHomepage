@@ -446,14 +446,11 @@ const Test = () => {
       </div>
     </div>
 
-
+    </div>
    
     
     {/*bottom */}
     <Bottom />     
-
-  </div>
-
 
    {/* top */}
     <Top />
