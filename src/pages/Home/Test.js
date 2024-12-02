@@ -336,19 +336,20 @@ const Test = () => {
 
             {/* 설명 - 오른쪽 상단 */}
             {isSelected && (
-              
               <div className="absolute right-[60px] top-[60px] w-[1240px] flex flex-row items-center justify-end">
-              <div className="flex flex-row items-center justify-start gap-[10px]">
-                {panel.keyword.map((keyword,index) => (
-                  <div key = {index} className="flex flex-row items-center justify-center py-[6px] px-[15px] border-[2px] border-solid border-[#fff] rounded-[50px]">
-                    <div className="text-[14px] leading-[20px] font-['Pretendard'] font-bold text-[#fff] whitespace-nowrap">{keyword}</div>
+                <Link to = {panel.link} >
+                  <div className="flex flex-row items-center justify-start gap-[10px]">
+                    {panel.keyword.map((keyword,index) => (
+                      <div key = {index} className="flex flex-row items-center justify-center py-[6px] px-[15px] border-[2px] border-solid border-[#fff] rounded-[50px]">
+                        <div className="text-[14px] leading-[20px] font-['Pretendard'] font-bold text-[#fff] whitespace-nowrap">{keyword}</div>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-              
-              <div className="absolute -translate-x-1/2 left-[calc(50%+220px)] top-[52px] w-[800px] text-[15px] font-['Pretendard'] text-[#fff] text-right">
-                <p className="text-sm leading-[1.5] whitespace-pre-wrap">{panel.description}</p>
-              </div>
+                  
+                  <div className="absolute -translate-x-1/2 left-[calc(50%+220px)] top-[52px] w-[800px] text-[15px] font-['Pretendard'] text-[#fff] text-right">
+                    <p className="text-sm leading-[1.5] whitespace-pre-wrap">{panel.description}</p>
+                  </div>
+                </Link>
               </div>
             )}
 
@@ -359,11 +360,13 @@ const Test = () => {
               //   <img src={ic_arrow} />
               // </div>
                 <div className="absolute left-[60px] bottom-[60px] text-white flex flex-col items-start justify-center">
-                    <div className="text-[50px] font-['Pretendard'] font-extrabold text-[#fff] h-[64px] text-nowrap">{panel.title1}</div>
-                    <div className="flex flex-row items-center justify-start gap-[24px] h-[64px]">
-                        <div className="text-[50px] font-['Pretendard'] font-extrabold text-[#fff] ">{panel.title2}</div>
-                        <img width="54" height="54" src={ic_arrow}></img>
-                    </div>
+                    <Link to = {panel.link} >
+                      <div className="text-[50px] font-['Pretendard'] font-extrabold text-[#fff] h-[64px] text-nowrap">{panel.title1}</div>
+                      <div className="flex flex-row items-center justify-start gap-[24px] h-[64px]">
+                          <div className="text-[50px] font-['Pretendard'] font-extrabold text-[#fff] ">{panel.title2}</div>
+                          <img width="54" height="54" src={ic_arrow}></img>
+                      </div>
+                    </Link>
                 </div>
             )}
           </div>
