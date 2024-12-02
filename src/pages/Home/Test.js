@@ -209,7 +209,7 @@ const Test = () => {
 
 
 
- return (<div className="relative max-w-[1920px] min-w-[1440px] mx-auto flex flex-col items-center">
+ return (<div className="relative w-[1920px] min-w-[1440px] mx-auto flex flex-col items-center">
     
     <div className="relative self-stretch h-[2844px] shrink-0 bg-[#6b6677] overflow-hidden">
     
@@ -376,7 +376,7 @@ const Test = () => {
   </div>
 
     {/* notice */}
-    <div className="flex flex-col items-center  max-w-[1920px] min-w-[1440px] "   style={{backgroundImage: `url(${img10})`, backgroundSize: "cover",backgroundPosition: "center",width: "100%", height : "960px" ,paddingTop: "180px", paddingBottom: "80px"}}>
+    <div className="flex flex-col items-center  max-w-[1920px] min-w-[1440px] "   style={{backgroundImage: `url(${img10})`, backgroundSize: "cover",backgroundPosition: "center",width: "100%", height : "29%" ,paddingTop: "115px"}}>
       <div className="flex flex-col items-center">
 
         <div className="flex flex-col items-start justify-start">
