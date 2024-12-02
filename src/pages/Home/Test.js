@@ -255,7 +255,7 @@ const Test = () => {
               key={index}
               onClick={() => handleSetSlide(index)}
               className={`w-4 h-4 rounded-full cursor-pointer ${
-                index === currentSlide ? 'bg-blue-500' : 'bg-white'
+                index === currentSlide ? 'bg-[#476AB2]' : 'bg-white'
               }`}
             ></div>
           ))}
