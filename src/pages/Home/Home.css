@@ -1,6 +1,8 @@
-#partners {
-    animation: webscrollAnimation 120s linear infinite;
+
+.animate-scroll  {
+    animation: webscrollAnimation 150s linear infinite;
 }
+
 
 @keyframes webscrollAnimation {
     0% {
@@ -10,3 +12,4 @@
         transform: translateX(-100%);
     }
 }
+

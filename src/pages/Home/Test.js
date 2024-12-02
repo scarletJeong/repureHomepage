@@ -83,6 +83,20 @@ const Test = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [opacity, setOpacity] = useState(1);
 
+  const imagePaths = [
+    logo01148_372, image8149_431, image8149_433, image8149_435, image8149_437,
+    image15149_461, image149_449, image149_451, image149_445, image156_466,
+    image156_475, image158_584, image16158_586, logo1158_588, image158_590,
+    image158_592, image158_594, image158_596, image158_598, image20158_600,
+    image158_602, image158_609, image16158_611, logo1158_613, logo1161_860,
+    image158_615, image158_617, image158_619, image158_621, image20158_625,
+    image158_623, image161_853, image161_835, image161_837, logo1161_839,
+    image161_856, image161_849, image161_841, logo161_861, image161_851,
+    image161_843, image161_847, image161_845
+  ]
+
+  
+
   const slides = [
     {
       image: MedicalDiscussionImage2,
@@ -145,6 +159,9 @@ const Test = () => {
       title1: "평등한 치료의 기회를 향한",
       title2: "의약사업",
       description: "수많은 사람들이 난치병과 희귀질환으로 고통 받고 있지만 희귀질환을 진단하는 것은쉽지 않을 뿐더러 치료제를 구하는 것은 더더욱 어렵습니다.\n리퓨어는 환자의 아픔과 고통을 이해하고 해결하기 위해 최선을 다할 것입니다.",
+      keyword : ["의약품 수입ㆍ유통", "위탁 개발 생산","신약개발"],
+      objectPosition : '5%',
+      link:'/business-medicine'
     },
     {
       image: panel2,
@@ -152,6 +169,9 @@ const Test = () => {
       title1: "반려동물의 건강하고 행복한 삶을 위한",
       title2: "동물사업",
       description: "반려동물을 키우는 가구가 급속도로 늘어나는 추세지만 여전히 반려동물을 제대로 케어해주지 못하고 있습니다.\n반려동물이 건강하게 우리 곁에 머물 수 있도록 정확한 진단을 바탕으로 동물의약품과 식품, 서비스를 제공합니다.",
+      keyword : ["의약품 수입ㆍ유통", "의약부외품 수입ㆍ유통", "동물 식물 수입ㆍ유통", "동물 의료기기 수입ㆍ유통"],
+      objectPosition : '43%',
+      link:'/business-animal'
     },
     {
       image: panel3,
@@ -159,6 +179,9 @@ const Test = () => {
       title1: "삶의 질을 높이는 스마트한 건강관리",
       title2: "헬스케어사업",
       description: "의료인과 만성 질환자를 온라인으로 연결해주는 헬스케어 플랫폼으로 고령화와 잘못된 생활습관으로 인해 급속하게 늘고있는\n만성질환자에게 리퓨어는 의료 네트워크를 활용하여 복약, 운동, 식이, 생활 습관 전반에 대한 통합 멘토링을 제공합니다.",
+      keyword : ["질환관리 플랫폼", "원격진료 플랫폼","디지털치료제"],
+      objectPosition : '40%',
+      link:'/business-healthcare'
     },
     {
       image: panel4,
@@ -166,6 +189,9 @@ const Test = () => {
       title1: "인류 건강을 책임지기 위한 신속정확한",
       title2: "진단사업",
       description: "정확한 진단은 오진을 줄이고 병증에 올바르게 대처할 수 있게 합니다.\n리퓨어의 신속하고 정확한 진단은 치료 및 골든타임을 놓치지 않도록 유전자, 오믹스, IT기반 등의 검사로 인류를 책임집니다.",
+      keyword : ["유전자 검사", "다중오믹스 플랫폼","진단시약ㆍ기기"],
+      objectPosition : '5%',
+      link:'/business-dig'
     },
   ];
   
@@ -229,7 +255,7 @@ const Test = () => {
               key={index}
               onClick={() => handleSetSlide(index)}
               className={`w-4 h-4 rounded-full cursor-pointer ${
-                index === currentSlide ? 'bg-blue-500' : 'bg-gray-400'
+                index === currentSlide ? 'bg-blue-500' : 'bg-white'
               }`}
             ></div>
           ))}
@@ -247,7 +273,7 @@ const Test = () => {
       </div>
 
 {/*패널 */}
-<div className="absolute -translate-x-1/2 left-1/2 top-[354px] max-w-[1920px] min-w-[1920px] flex flex-row items-center justify-center gap-[18px] overflow-hidden  whitespace-pre-wrap" style={{width: "100%"}}>
+<div className="absolute -translate-x-1/2 left-1/2 top-[354px] max-w-[1920px] min-w-[1920px] flex flex-row items-center justify-center gap-[18px] overflow-hidden whitespace-pre-wrap" style={{width: "100%"}}>
   {/* 큰 패널 */}
   {panels.map((panel, index) => {
     const isSelected = selectedPanel === index;
@@ -255,41 +281,65 @@ const Test = () => {
     const isRight = index > selectedPanel;
 
     return (
+      
       <div
         key={index}
-        className={`relative ${
+        className={`relative h-[600px] ${
           isSelected
-            ? "w-[1360px] h-[600px]"
-            : "w-[180px] h-[600px]"
-        } transition-all duration-500 transform ${
-          isLeft
-            ? `-translate-x-[${(selectedPanel - index) * 220}px]`
-            : isRight
-            ? `translate-x-[${(index - selectedPanel) * 220}px]`
-            : "translate-x-0"
-        }`}
+            ? "w-[1360px]"
+            : "w-[185px]"
+        } transition-all duration-1000 overflow-hidden`}
         onClick={() => handlePanelClick(index)}
       >
+        
         {/* 패널 이미지 */}
-        <img
+        {/* <img
           className="absolute w-full h-full object-cover"
           src={isSelected ? panel.image : panel.smallImage}
           alt={`Panel ${index + 1}`}
-        />
+        /> */}
+
+
+        {isSelected && (
+          <Link to = {panel.link} >
+          <img
+            className="absolute w-full h-full object-cover"
+            src={panel.image}
+            alt={`Panel ${index + 1}`}
+            style={{
+              opacity: isSelected ? 1 : 0,
+              transition: 'opacity 1s ease, transform 1s ease', // opacity와 transform에 대한 전환 추가
+              transform: isSelected ? 'scale(1)' : 'scale(1)', // 확대 효과 추가
+            }}
+          />
+          </Link>
+        )}
+        {/* 작은 이미지 */}
+        {!isSelected && (
+            <img
+              className="absolute h-full w-[1360px] overflow-hidden"
+              //src={panel.smallImage}
+              src={panel.image}
+              alt={`Panel ${index + 1}`}
+              style={{
+                opacity: isSelected ? 0 : 1,
+                objectFit: 'cover', // 이미지가 요소를 완전히 채우도록 설정
+                objectPosition: panel.objectPosition, // 보이도록 할 이미지의 위치 조정 (필요에 따라 수정)
+                transform: 'scale(1)', // 기본 크기 유지
+              }}
+            />
+        )}
+
          {/* 설명 - 오른쪽 상단 */}
          {isSelected && (
           
           <div className="absolute right-[60px] top-[60px] w-[1240px] flex flex-row items-center justify-end">
           <div className="flex flex-row items-center justify-start gap-[10px]">
-            <div className="flex flex-row items-center justify-center py-[6px] px-[15px] border-[2px] border-solid border-[#fff] rounded-[50px]">
-              <div className="text-[14px] leading-[20px] font-['Pretendard'] font-bold text-[#fff] whitespace-nowrap">의약품 수입 유통</div>
-            </div>
-            <div className="flex flex-row items-center justify-center py-[6px] px-[15px] border-[2px] border-solid border-[#fff] rounded-[50px]">
-              <div className="text-[14px] leading-[20px] font-['Pretendard'] font-bold text-[#fff] whitespace-nowrap">위탁 개발 생산</div>
-            </div>
-            <div className="flex flex-row items-center justify-center py-[6px] px-[15px] border-[2px] border-solid border-[#fff] rounded-[50px]">
-              <div className="text-[14px] leading-[20px] font-['Pretendard'] font-bold text-[#fff] whitespace-nowrap">신약개발</div>
-            </div>
+            {panel.keyword.map((keyword,index) => (
+              <div key = {index} className="flex flex-row items-center justify-center py-[6px] px-[15px] border-[2px] border-solid border-[#fff] rounded-[50px]">
+                <div className="text-[14px] leading-[20px] font-['Pretendard'] font-bold text-[#fff] whitespace-nowrap">{keyword}</div>
+              </div>
+            ))}
           </div>
           
           <div className="absolute -translate-x-1/2 left-[calc(50%+220px)] top-[52px] w-[800px] text-[15px] font-['Pretendard'] text-[#fff] text-right">
@@ -305,22 +355,12 @@ const Test = () => {
           //   <img src={ic_arrow} />
           // </div>
             <div className="absolute left-[60px] bottom-[60px] text-white flex flex-col items-start justify-center">
-                <div className="text-[50px] font-['Pretendard'] font-extrabold text-[#fff] h-[64px]">{panel.title1}</div>
+                <div className="text-[50px] font-['Pretendard'] font-extrabold text-[#fff] h-[64px] text-nowrap">{panel.title1}</div>
                 <div className="flex flex-row items-center justify-start gap-[24px] h-[64px]">
                     <div className="text-[50px] font-['Pretendard'] font-extrabold text-[#fff] ">{panel.title2}</div>
                     <img width="54" height="54" src={ic_arrow}></img>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
         )}
       </div>
     );
@@ -339,163 +379,20 @@ const Test = () => {
 
      {/* footer */}
     <div className="w-[1920px] flex flex-row items-start justify-center overflow-hidden">
-      <div className="flex-1 flex flex-row items-start justify-center py-[24px] px-[160px] bg-[#fff] overflow-hidden">
-        <div id='partners' className="flex-1 flex flex-row items-center justify-center">
-          {/* <div className="h-[100px] flex flex-row items-center justify-center pt-0 pr-0 pb-0 pl-[100px]">
-            <div className="flex flex-col items-center justify-center">
-              <div className="w-[48px] h-[48px] shrink-0 flex flex-row items-center justify-center border-[1px] border-solid border-[#122e70] rounded-[28px]">
-                <div className="relative w-[24px] h-[24px] shrink-0 overflow-hidden">
-                  <div className="absolute left-0 top-0 w-[24px] h-[24px] text-[20px] leading-[140%] font-['Inter'] font-bold text-[#122e70] text-center flex flex-col justify-center">←</div>
-                </div>
-              </div>
+      <div className="flex-1 flex flex-row items-center justify-start py-[10px] px-[160px] bg-[#fff] overflow-hidden">
+        <div className="flex-1 flex flex-row items-center justify-center animate-scroll">
+          {imagePaths.map((src, index)=> (
+            <div key={index} className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
+              <img src={src}></img>
             </div>
-          </div> */}
-          {/* <div className="flex-1 flex flex-row items-start justify-start"> 
-            <div className="flex-1 self-stretch flex flex-row items-start justify-start overflow-hidden"> */}
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={logo01148_372}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image8149_431}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image8149_433}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image8149_435}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image8149_437}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image15149_461}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image149_449}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image149_451}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image149_445}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image156_466}></img>
-              </div>
-
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image156_475}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_584}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image16158_586}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={logo1158_588}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_590}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_592}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_594}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_596}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_598}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image20158_600}></img>
-              </div>
-
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_602}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_609}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image16158_611}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={logo1158_613}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={logo1161_860}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_615}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_617}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_619}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_621}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image20158_625}></img>
-              </div>
-
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image158_623}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image161_853}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image161_835}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image161_837}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={logo1161_839}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image161_856}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image161_849}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image161_841}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={logo161_861}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image161_851}></img>
-              </div>
-
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center ">
-                <img src={image161_843}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image161_847}></img>
-              </div>
-              <div className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
-                <img src={image161_845}></img>
-              </div>
-            {/* </div> */}
-          {/* </div> */}
-          {/* <div className="self-stretch flex flex-row items-center justify-center pt-0 pr-[100px] pb-0 pl-0">
-            <div className="flex flex-col items-center justify-center">
-              <div className="w-[48px] h-[48px] shrink-0 flex flex-row items-center justify-center border-[1px] border-solid border-[#122e70] rounded-[28px]">
-                <div className="relative w-[24px] h-[24px] shrink-0 overflow-hidden">
-                  <div className="absolute left-0 top-0 w-[24px] h-[24px] text-[20px] leading-[140%] font-['Inter'] font-bold text-[#122e70] text-center flex flex-col justify-center">→</div>
-                </div>
-              </div>
+          ))}
+        </div>
+        <div className="flex-1 flex flex-row items-center justify-center animate-scroll">
+          {imagePaths.map((src, index)=> (
+            <div key={`repeat-${index}`} className="w-[184px] h-[72px] shrink-0 flex flex-row items-center justify-center">
+              <img src={src}></img>
             </div>
-          </div> */}
+          ))}
         </div>
       </div>
     </div>
