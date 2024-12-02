@@ -214,218 +214,209 @@ const Test = () => {
     <div className="relative self-stretch h-[2844px] shrink-0 bg-[#6b6677] overflow-hidden">
     
     
-    {/*first */}
-    <div className="relative self-stretch h-[960px] shrink-0 overflow-hidden">
-         {/* 슬라이드 영역 */}
-         <div className="relative h-[960px] w-full">
-          {/* 현재 슬라이드 이미지 */}
-          <img
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            src={slides[currentSlide].image}
-          alt={`Slide ${currentSlide + 1}`}
-        />
-         {currentSlide % 2 === 0 ? (
-            <div className="absolute left-[280px] top-[280px] text-white transition-opacity duration-1000" style={{opacity}}>
-              <h1 className="text-5xl font-bold">{slides[0].title}</h1>
-              <p className="text-lg mt-2">{slides[0].subtitle}</p>
-            </div> 
-         ) : (
-          <>
-          <div className="absolute right-[280px] bottom-[200px] gap-[30px] flex flex-col items-end text-white transition-opacity duration-1000" style={{opacity}}>
-            <div className=' flex flex-col items-end'>
-              <h1 className="text-5xl font-bold text-right">{slides[1].title}</h1>
-              <p className="text-lg mt-2 text-right">{slides[1].subtitle}</p>
-            </div>
-            <Link to = "/aboutus-ceo">
-              <div className="inline-flex justify-end flex-row items-center gap-[10px] py-[12px] px-[24px] bg-[#ffffff33] border-[1px] border-solid border-[#fff] rounded-[33px] whitespace-nowrap">
-                  <p className="text-[16px] leading-[100%] font-['Montserrat'] font-semibold text-[#fff] whitespace-nowrap">About us</p>
-                  <img width="16" height="16" src={arrow_right}></img>
-              </div>
-            </Link>  
-          </div>
-          </>
-         )}
-        
-        {/* 슬라이드 텍스트 */}
-        {/* <div className="absolute left-[280px] top-[180px] text-white">
-          <h1 className="text-4xl font-bold">{slides[currentSlide].title}</h1>
-          <p className="text-lg mt-2">{slides[currentSlide].subtitle}</p>
-        </div> */}
-
-        {/* 네비게이션 점 */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4">
-          {slides.map((_, index) => (
-            <div
-              key={index}
-              onClick={() => handleSetSlide(index)}
-              className={`w-4 h-4 rounded-full cursor-pointer ${
-                index === currentSlide ? 'bg-[#476AB2]' : 'bg-white'
-              }`}
-            ></div>
-          ))}
-        </div>
-      </div>
-
-    </div>
-
-
-    {/*second */}
-    <div className="relative self-stretch h-[1080px] shrink-0 bg-[#fff]">
-      <div className="absolute -translate-x-1/2 left-1/2 top-[180px] flex flex-col items-center justify-start gap-[4px]">
-        <div className="text-[16px] leading-[20px] font-['Pretendard'] font-medium text-[#2d4198] whitespace-nowrap">리퓨어 헬스케어 사업소개</div>
-        <div className="text-[40px] leading-[50px] font-['Montserrat'] font-bold text-[#000] whitespace-nowrap">OUR BUSINESS</div>
-      </div>
-
-{/*패널 */}
-<div className="absolute -translate-x-1/2 left-1/2 top-[354px] max-w-[1920px] min-w-[1920px] flex flex-row items-center justify-center gap-[18px] overflow-hidden whitespace-pre-wrap" style={{width: "100%"}}>
-  {/* 큰 패널 */}
-  {panels.map((panel, index) => {
-    const isSelected = selectedPanel === index;
-    const isLeft = index < selectedPanel;
-    const isRight = index > selectedPanel;
-
-    return (
-      
-      <div
-        key={index}
-        className={`relative h-[600px] ${
-          isSelected
-            ? "w-[1360px]"
-            : "w-[185px]"
-        } transition-all duration-1000 overflow-hidden`}
-        onClick={() => handlePanelClick(index)}
-      >
-        
-        {/* 패널 이미지 */}
-        {/* <img
-          className="absolute w-full h-full object-cover"
-          src={isSelected ? panel.image : panel.smallImage}
-          alt={`Panel ${index + 1}`}
-        /> */}
-
-
-        {isSelected && (
-          <Link to = {panel.link} >
-          <img
-            className="absolute w-full h-full object-cover"
-            src={panel.image}
-            alt={`Panel ${index + 1}`}
-            style={{
-              opacity: isSelected ? 1 : 0,
-              transition: 'opacity 1s ease, transform 1s ease', // opacity와 transform에 대한 전환 추가
-              transform: isSelected ? 'scale(1)' : 'scale(1)', // 확대 효과 추가
-            }}
-          />
-          </Link>
-        )}
-        {/* 작은 이미지 */}
-        {!isSelected && (
-            <img
-              className="absolute h-full w-[1360px] overflow-hidden"
-              //src={panel.smallImage}
-              src={panel.image}
-              alt={`Panel ${index + 1}`}
-              style={{
-                opacity: isSelected ? 0 : 1,
-                objectFit: 'cover', // 이미지가 요소를 완전히 채우도록 설정
-                objectPosition: panel.objectPosition, // 보이도록 할 이미지의 위치 조정 (필요에 따라 수정)
-                transform: 'scale(1)', // 기본 크기 유지
-              }}
+        {/*first */}
+        <div className="relative self-stretch h-[960px] shrink-0 overflow-hidden">
+            {/* 슬라이드 영역 */}
+            <div className="relative h-[960px] w-full">
+              {/* 현재 슬라이드 이미지 */}
+              <img
+                className="absolute top-0 left-0 w-full h-full object-cover"
+                src={slides[currentSlide].image}
+              alt={`Slide ${currentSlide + 1}`}
             />
-        )}
-
-         {/* 설명 - 오른쪽 상단 */}
-         {isSelected && (
-          
-          <div className="absolute right-[60px] top-[60px] w-[1240px] flex flex-row items-center justify-end">
-          <div className="flex flex-row items-center justify-start gap-[10px]">
-            {panel.keyword.map((keyword,index) => (
-              <div key = {index} className="flex flex-row items-center justify-center py-[6px] px-[15px] border-[2px] border-solid border-[#fff] rounded-[50px]">
-                <div className="text-[14px] leading-[20px] font-['Pretendard'] font-bold text-[#fff] whitespace-nowrap">{keyword}</div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="absolute -translate-x-1/2 left-[calc(50%+220px)] top-[52px] w-[800px] text-[15px] font-['Pretendard'] text-[#fff] text-right">
-            <p className="text-sm leading-[1.5] whitespace-pre-wrap">{panel.description}</p>
-          </div>
-          </div>
-        )}
-
-        {/* 제목 - 하단 */}
-        {isSelected && (
-          // <div className="absolute left-[60px] bottom-[60px] text-white px-4 py-2">
-          //   <h2 className="text-[54px] font-bold leading-[1.15] whitespace-pre-wrap">{panel.title}</h2>
-          //   <img src={ic_arrow} />
-          // </div>
-            <div className="absolute left-[60px] bottom-[60px] text-white flex flex-col items-start justify-center">
-                <div className="text-[50px] font-['Pretendard'] font-extrabold text-[#fff] h-[64px] text-nowrap">{panel.title1}</div>
-                <div className="flex flex-row items-center justify-start gap-[24px] h-[64px]">
-                    <div className="text-[50px] font-['Pretendard'] font-extrabold text-[#fff] ">{panel.title2}</div>
-                    <img width="54" height="54" src={ic_arrow}></img>
+            {currentSlide % 2 === 0 ? (
+                <div className="absolute left-[280px] top-[280px] text-white transition-opacity duration-1000" style={{opacity}}>
+                  <h1 className="text-5xl font-bold">{slides[0].title}</h1>
+                  <p className="text-lg mt-2">{slides[0].subtitle}</p>
+                </div> 
+            ) : (
+              <>
+              <div className="absolute right-[280px] bottom-[200px] gap-[30px] flex flex-col items-end text-white transition-opacity duration-1000" style={{opacity}}>
+                <div className=' flex flex-col items-end'>
+                  <h1 className="text-5xl font-bold text-right">{slides[1].title}</h1>
+                  <p className="text-lg mt-2 text-right">{slides[1].subtitle}</p>
                 </div>
-            </div>
-        )}
-      </div>
-    );
-  })}
-</div>
+                <Link to = "/aboutus-ceo">
+                  <div className="inline-flex justify-end flex-row items-center gap-[10px] py-[12px] px-[24px] bg-[#ffffff33] border-[1px] border-solid border-[#fff] rounded-[33px] whitespace-nowrap">
+                      <p className="text-[16px] leading-[100%] font-['Montserrat'] font-semibold text-[#fff] whitespace-nowrap">About us</p>
+                      <img width="16" height="16" src={arrow_right}></img>
+                  </div>
+                </Link>  
+              </div>
+              </>
+            )}
+            
+            {/* 슬라이드 텍스트 */}
+            {/* <div className="absolute left-[280px] top-[180px] text-white">
+              <h1 className="text-4xl font-bold">{slides[currentSlide].title}</h1>
+              <p className="text-lg mt-2">{slides[currentSlide].subtitle}</p>
+            </div> */}
 
-
-
-    </div>
-
-    {/* notice */}
-    <img width="1920" height="960" src={notice}></img>
-  <div className="flex flex-col items-center  max-w-[1920px] min-w-[1440px] "   style={{backgroundImage: `url(${img10})`, backgroundSize: "cover",backgroundPosition: "center",width: "100%", height : "960px" ,paddingTop: "180px", paddingBottom: "80px"}}>
-    <div className="flex flex-col items-center">
-
-	    <div className="flex flex-col items-start justify-start">
-	      <div className="self-stretch flex flex-col items-center  justify-start gap-[5px]">
-		      <div className="text-[16px] font-['Pretendard'] font-medium text-[#2d4198] " >공지사항</div>
-		      <div className="text-[40px] font-['Montserrat'] font-bold text-[#000]">REPURE NOTICE</div>
-	      </div>
-	    </div>
-      <div className="flex flex-col items-center text-center">
-        <div className="text-[16px] leading-[60px] font-['Pretendard'] text-[#888]">리퓨어 헬스케어 회사 관련 뉴스와 새로운 공지사항을 만나보세요.</div>
-      </div>
-
-
-      <div className="self-stretch flex flex-row items-center justify-start gap-[38px]"  style={{ marginTop: "60px" }}>
-        <div className="w-[428px] shrink-0 flex flex-col items-start justify-start gap-[40px] p-[20px] bg-[#fff]">
-          <div className="self-stretch text-[16px] leading-[20px] font-['Montserrat'] font-semibold text-[#122e70]">NEWS</div>
-          <div className="self-stretch flex flex-col items-start justify-start gap-[20px]">
-            <div className="self-stretch h-[64px] text-[24px] leading-[32px] font-['Pretendard'] font-semibold text-[#000]">퓨어헬스케어, 시니어 헬스케어 사업 고도화 다자간 업무협약 체결</div>
-            <div className="self-stretch h-[72px] text-[16px] leading-[24px] font-['Pretendard'] font-extralight text-[#666] text-justify">리퓨어헬스케어는 키즈노트, 단국대학교 기술지주자회사 단국상의원, 아카라라이프와 시니어 헬스케어 역할 고도화를 위해 다자간 업무 협약을 체결했다고 8일 밝혔다...</div>
-          </div>
-          <div className="self-stretch flex flex-row items-center justify-between">
-            <div className="flex flex-row items-center justify-start gap-[4px]">
-              <img width="12" height="12" src={akar}></img>
-              <div className="text-[12px] leading-[25px] font-['Maven_Pro'] text-[#999] whitespace-nowrap">2024-04-08</div>
-            </div>
-            <div className="flex flex-row items-center justify-start gap-[10px] py-[8px] px-[20px] bg-[#122e70] rounded-[33px]">
-            <a href="https://www.techm.kr/news/articleView.html?idxno=122789" target="_blank" className="text-[12px] leading-[100%] font-['Montserrat'] text-[#fff] whitespace-nowrap">View more</a>
-              <img width="16" height="16" src={rightarror}></img>
+            {/* 네비게이션 점 */}
+            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4">
+              {slides.map((_, index) => (
+                <div
+                  key={index}
+                  onClick={() => handleSetSlide(index)}
+                  className={`w-4 h-4 rounded-full cursor-pointer ${
+                    index === currentSlide ? 'bg-[#476AB2]' : 'bg-white'
+                  }`}
+                ></div>
+              ))}
             </div>
           </div>
+
         </div>
-        <div className="relative w-[428px] self-stretch shrink-0 flex flex-col items-start justify-start gap-[40px] p-[20px] bg-[#fff]">
-          <div className="self-stretch text-[16px] leading-[20px] font-['Montserrat'] font-semibold text-[#122e70]">NOTICE</div>
-          <div className="self-stretch flex flex-col items-start justify-start gap-[20px]">
-            <div className="self-stretch h-[64px] text-[24px] leading-[32px] font-['Pretendard'] font-semibold text-[#000]">공지사항</div>
-            <div className="self-stretch h-[72px] text-[16px] leading-[24px] font-['Pretendard'] font-extralight text-[#666] text-justify">조금만 기다려주시면 새로운 소식으로 만나뵙겠습니다</div>
-          </div>
-          <div className="absolute left-[20px] top-[276px] w-[388px]"></div>
-        </div>
-      </div>
 
+
+        {/*second */}
+        <div className="relative self-stretch h-[1080px] shrink-0 bg-[#fff]">
+          <div className="absolute -translate-x-1/2 left-1/2 top-[180px] flex flex-col items-center justify-start gap-[4px]">
+            <div className="text-[16px] leading-[20px] font-['Pretendard'] font-medium text-[#2d4198] whitespace-nowrap">리퓨어 헬스케어 사업소개</div>
+            <div className="text-[40px] leading-[50px] font-['Montserrat'] font-bold text-[#000] whitespace-nowrap">OUR BUSINESS</div>
+          </div>
+
+    {/*패널 */}
+    <div className="absolute -translate-x-1/2 left-1/2 top-[354px] max-w-[1920px] min-w-[1920px] flex flex-row items-center justify-center gap-[18px] overflow-hidden whitespace-pre-wrap" style={{width: "100%"}}>
+      {/* 큰 패널 */}
+      {panels.map((panel, index) => {
+        const isSelected = selectedPanel === index;
+        const isLeft = index < selectedPanel;
+        const isRight = index > selectedPanel;
+
+        return (
+          
+          <div
+            key={index}
+            className={`relative h-[600px] ${
+              isSelected
+                ? "w-[1360px]"
+                : "w-[185px]"
+            } transition-all duration-1000 overflow-hidden`}
+            onClick={() => handlePanelClick(index)}
+          >
+            
+            {/* 패널 이미지 */}
+            {/* <img
+              className="absolute w-full h-full object-cover"
+              src={isSelected ? panel.image : panel.smallImage}
+              alt={`Panel ${index + 1}`}
+            /> */}
+
+
+            {isSelected && (
+              <Link to = {panel.link} >
+              <img
+                className="absolute w-full h-full object-cover"
+                src={panel.image}
+                alt={`Panel ${index + 1}`}
+                style={{
+                  opacity: isSelected ? 1 : 0,
+                  transition: 'opacity 1s ease, transform 1s ease', // opacity와 transform에 대한 전환 추가
+                  transform: isSelected ? 'scale(1)' : 'scale(1)', // 확대 효과 추가
+                }}
+              />
+              </Link>
+            )}
+            {/* 작은 이미지 */}
+            {!isSelected && (
+                <img
+                  className="absolute h-full w-[1360px] overflow-hidden"
+                  //src={panel.smallImage}
+                  src={panel.image}
+                  alt={`Panel ${index + 1}`}
+                  style={{
+                    opacity: isSelected ? 0 : 1,
+                    objectFit: 'cover', // 이미지가 요소를 완전히 채우도록 설정
+                    objectPosition: panel.objectPosition, // 보이도록 할 이미지의 위치 조정 (필요에 따라 수정)
+                    transform: 'scale(1)', // 기본 크기 유지
+                  }}
+                />
+            )}
+
+            {/* 설명 - 오른쪽 상단 */}
+            {isSelected && (
+              
+              <div className="absolute right-[60px] top-[60px] w-[1240px] flex flex-row items-center justify-end">
+              <div className="flex flex-row items-center justify-start gap-[10px]">
+                {panel.keyword.map((keyword,index) => (
+                  <div key = {index} className="flex flex-row items-center justify-center py-[6px] px-[15px] border-[2px] border-solid border-[#fff] rounded-[50px]">
+                    <div className="text-[14px] leading-[20px] font-['Pretendard'] font-bold text-[#fff] whitespace-nowrap">{keyword}</div>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="absolute -translate-x-1/2 left-[calc(50%+220px)] top-[52px] w-[800px] text-[15px] font-['Pretendard'] text-[#fff] text-right">
+                <p className="text-sm leading-[1.5] whitespace-pre-wrap">{panel.description}</p>
+              </div>
+              </div>
+            )}
+
+            {/* 제목 - 하단 */}
+            {isSelected && (
+              // <div className="absolute left-[60px] bottom-[60px] text-white px-4 py-2">
+              //   <h2 className="text-[54px] font-bold leading-[1.15] whitespace-pre-wrap">{panel.title}</h2>
+              //   <img src={ic_arrow} />
+              // </div>
+                <div className="absolute left-[60px] bottom-[60px] text-white flex flex-col items-start justify-center">
+                    <div className="text-[50px] font-['Pretendard'] font-extrabold text-[#fff] h-[64px] text-nowrap">{panel.title1}</div>
+                    <div className="flex flex-row items-center justify-start gap-[24px] h-[64px]">
+                        <div className="text-[50px] font-['Pretendard'] font-extrabold text-[#fff] ">{panel.title2}</div>
+                        <img width="54" height="54" src={ic_arrow}></img>
+                    </div>
+                </div>
+            )}
+          </div>
+        );
+      })}
     </div>
   </div>
 
+    {/* notice */}
+    <div className="flex flex-col items-center  max-w-[1920px] min-w-[1440px] "   style={{backgroundImage: `url(${img10})`, backgroundSize: "cover",backgroundPosition: "center",width: "100%", height : "960px" ,paddingTop: "180px", paddingBottom: "80px"}}>
+      <div className="flex flex-col items-center">
+
+        <div className="flex flex-col items-start justify-start">
+          <div className="self-stretch flex flex-col items-center  justify-start gap-[5px]">
+            <div className="text-[16px] font-['Pretendard'] font-medium text-[#2d4198] " >공지사항</div>
+            <div className="text-[40px] font-['Montserrat'] font-bold text-[#000]">REPURE NOTICE</div>
+          </div>
+        </div>
+        <div className="flex flex-col items-center text-center">
+          <div className="text-[16px] leading-[60px] font-['Pretendard'] text-[#888]">리퓨어 헬스케어 회사 관련 뉴스와 새로운 공지사항을 만나보세요.</div>
+        </div>
 
 
-
-
+        <div className="self-stretch flex flex-row items-center justify-start gap-[38px]"  style={{ marginTop: "60px" }}>
+          <div className="w-[428px] shrink-0 flex flex-col items-start justify-start gap-[40px] p-[20px] bg-[#fff]">
+            <div className="self-stretch text-[16px] leading-[20px] font-['Montserrat'] font-semibold text-[#122e70]">NEWS</div>
+            <div className="self-stretch flex flex-col items-start justify-start gap-[20px]">
+              <div className="self-stretch h-[64px] text-[24px] leading-[32px] font-['Pretendard'] font-semibold text-[#000]">퓨어헬스케어, 시니어 헬스케어 사업 고도화 다자간 업무협약 체결</div>
+              <div className="self-stretch h-[72px] text-[16px] leading-[24px] font-['Pretendard'] font-extralight text-[#666] text-justify">리퓨어헬스케어는 키즈노트, 단국대학교 기술지주자회사 단국상의원, 아카라라이프와 시니어 헬스케어 역할 고도화를 위해 다자간 업무 협약을 체결했다고 8일 밝혔다...</div>
+            </div>
+            <div className="self-stretch flex flex-row items-center justify-between">
+              <div className="flex flex-row items-center justify-start gap-[4px]">
+                <img width="12" height="12" src={akar}></img>
+                <div className="text-[12px] leading-[25px] font-['Maven_Pro'] text-[#999] whitespace-nowrap">2024-04-08</div>
+              </div>
+              <div className="flex flex-row items-center justify-start gap-[10px] py-[8px] px-[20px] bg-[#122e70] rounded-[33px]">
+              <a href="https://www.techm.kr/news/articleView.html?idxno=122789" target="_blank" className="text-[12px] leading-[100%] font-['Montserrat'] text-[#fff] whitespace-nowrap">View more</a>
+                <img width="16" height="16" src={rightarror}></img>
+              </div>
+            </div>
+          </div>
+          <div className="relative w-[428px] self-stretch shrink-0 flex flex-col items-start justify-start gap-[40px] p-[20px] bg-[#fff]">
+            <div className="self-stretch text-[16px] leading-[20px] font-['Montserrat'] font-semibold text-[#122e70]">NOTICE</div>
+            <div className="self-stretch flex flex-col items-start justify-start gap-[20px]">
+              <div className="self-stretch h-[64px] text-[24px] leading-[32px] font-['Pretendard'] font-semibold text-[#000]">공지사항</div>
+              <div className="self-stretch h-[72px] text-[16px] leading-[24px] font-['Pretendard'] font-extralight text-[#666] text-justify">조금만 기다려주시면 새로운 소식으로 만나뵙겠습니다</div>
+            </div>
+            <div className="absolute left-[20px] top-[276px] w-[388px]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
      {/* footer */}
     <div className="w-[1920px] flex flex-row items-start justify-center overflow-hidden">
       <div className="flex-1 flex flex-row items-center justify-start py-[10px] px-[160px] bg-[#fff] overflow-hidden">
@@ -445,10 +436,7 @@ const Test = () => {
         </div>
       </div>
     </div>
-
-    </div>
    
-    
     {/*bottom */}
     <Bottom />     
 
