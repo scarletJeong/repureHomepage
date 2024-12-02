@@ -28,8 +28,7 @@ import img13 from '../../assets/image190_1188.png'
 
 
 const Animal = () => {
-	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] mx-auto flex flex-col items-center">
- 
+	return (<div className="relative w-[1920px] min-w-[1440px] flex flex-col justify-start bg-[#fff] mx-auto  items-center" >
  {/*title */}
   {/* Business Title */}
   <BusinessTitle activeTab="동물사업" />

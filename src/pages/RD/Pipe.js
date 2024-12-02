@@ -15,10 +15,11 @@ import img8 from '../../assets/Frame 104213_892.png'
 import img9 from '../../assets/Frame 104213_902.png'
 import img10 from '../../assets/Frame 79213_881.png'
 import img11 from '../../assets/Frame 78213_887.png'
+import img12 from '../../assets/Rectangle 74.png'
 
 
 const Pipe = () => {
-	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] mx-auto flex flex-col items-center">
+	return (<div className=" relative w-[1920px] min-w-[1440px] flex flex-col justify-start bg-[#fff] mx-auto  items-center" >
 
   {/*RD title */}
   <RDTitle activeTab="파이프라인"  />
@@ -54,21 +55,24 @@ const Pipe = () => {
         <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">출시</div>
       </div>
 
-
-      <div className="w-[272px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b border-r">
+      <div className="w-[272px] h-[48px] shrink-0 flex flex-wrap items-center justify-center  border-b border-r">
         <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">INFUGEM</div>
+      </div>
+      <div className="absolute left-[272px] top-[111px] w-[682px] h-[18px] shrink-0">
+        <div className="absolute left-0 top-0 w-[682px] h-[18px] bg-[#ffffff4d] rounded-r-full"></div>
       </div>
       <div className="w-[272px] h-[48px] shrink-0"></div>
       <div className="w-[272px] h-[48px] shrink-0"></div>
       <div className="w-[272px] h-[48px] shrink-0"></div>
       <div className="w-[272px] h-[48px] shrink-0"></div>
+
 
       <div className="w-[272px] h-[48px] shrink-0 flex flex-wrap items-center justify-center  border-b border-r">
         <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">TRISENOX VIAL</div>
       </div>
       <div className="relative w-[272px] h-[48px] shrink-0 flex flex-wrap items-center justify-center">
         <div className="absolute left-0 top-[15px] w-[682px] h-[18px] shrink-0">
-          <div className="absolute left-0 top-0 w-[682px] h-[18px] bg-[#ffffff4d]"></div>
+          <div className="absolute left-0 top-0 w-[682px] h-[18px] bg-[#ffffff4d] rounded-r-full"></div>
         </div>
       </div>
       <div className="w-[272px] h-[48px] shrink-0"></div>
@@ -80,7 +84,7 @@ const Pipe = () => {
       </div>
       <div className="relative w-[272px] h-[48px] shrink-0 flex flex-wrap items-center justify-center">
         <div className="absolute left-0 top-[15px] w-[682px] h-[18px] shrink-0">
-          <div className="absolute left-0 top-0 w-[682px] h-[18px] bg-[#ffffff4d]"></div>
+          <div className="absolute left-0 top-0 w-[682px] h-[18px] bg-[#ffffff4d] rounded-r-full"></div>
         </div>
       </div>
       <div className="w-[272px] h-[48px] shrink-0"></div>
@@ -107,13 +111,11 @@ const Pipe = () => {
       <div className="w-[272px] h-[48px] shrink-0"></div>
       <div className="w-[272px] h-[48px] shrink-0"></div>
       
-      <div className="absolute left-[272px] top-[111px] w-[682px] h-[18px] shrink-0">
-        <div className="absolute left-0 top-0 w-[682px] h-[18px] bg-[#ffffff4d]"></div>
-      </div>
+     
     </div>
 
 
-    {/*의약품 */}
+    {/*의약품 개발*/}
     <div className="absolute -translate-x-1/2 left-1/2 top-[768px] w-[1360px] flex flex-wrap items-start justify-start">
       
       <div className="w-[1360px] h-[48px] shrink-0 flex flex-wrap items-center justify-center bg-[#ffffff4d]  ">
@@ -138,11 +140,12 @@ const Pipe = () => {
       </div>
 
 
+
       <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-[solid] border-#fff border-t  border-b border-r border-[0_1px_1px_0]">
         <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">자가주사 응급의약품</div>
       </div>
       <div className="relative w-[272px] h-[48px] shrink-0 flex flex-wrap items-center justify-center">
-        <img className="absolute left-0 top-[15px]" width="137" height="18" src={img3}></img>
+        <img className="absolute left-0 top-[15px]" width="137" height="18" src={img1}></img>
       </div>
       <div className="w-[272px] h-[48px] shrink-0"></div>
       <div className="w-[272px] h-[48px] shrink-0"></div>
@@ -153,7 +156,7 @@ const Pipe = () => {
         <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">ODF 개 심장약</div>
       </div>
       <div className="relative w-[1120px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b">
-        <img className="absolute left-0 top-[15px]" width="137" height="18" src={img4}></img>
+        <img className="absolute left-0 top-[15px]" width="137" height="18" src={img1}></img>
       </div>
       <div className="w-[272px] h-[48px] shrink-0"></div>
       <div className="w-[272px] h-[48px] shrink-0"></div>
@@ -163,128 +166,6 @@ const Pipe = () => {
 
 
 
-    {/*식품 개발 */}
-    <div className="absolute -translate-x-1/2 left-1/2 top-[1992px] w-[1360px] flex flex-wrap items-start justify-start">
-
-      <div className="w-[1360px] h-[48px] shrink-0 flex flex-wrap items-center justify-center bg-[#ffffff4d] ">
-        <div className="text-[24px] leading-[24px] font-['Pretendard'] font-extrabold text-[#fff] text-center whitespace-nowrap">식품 개발</div>
-      </div>
-
-
-      <div className="w-[227px] h-[48px] shrink-0 border-[solid] border-#fff border-t border-b border-r"></div>
-      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b border-t border-r ">
-        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">품목검토</div>
-      </div>
-      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b border-t border-r">
-        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">제품디자인</div>
-      </div>
-      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b border-t border-r ">
-        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">시제품</div>
-      </div>
-      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b border-t border-r ">
-        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">인허가</div>
-      </div>
-      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b border-t ">
-        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">출시</div>
-      </div>
-
-      
-      <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r">
-        <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify ">반려동물 음료수</div>
-      </div>
-      <div className="absolute left-[227px] top-[111px] w-[454px] h-[18px] shrink-0">
-        <div className="absolute left-0 top-0 w-[454px] h-[18px] bg-[#ffffff4d]"></div>
-      </div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-
-
-      <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-t border-b">
-        <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">액상사료</div>
-      </div>
-      <div className="relative w-[1100px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b">
-        <div className="absolute left-[1px] top-[15px] w-[454px] h-[18px] shrink-0">
-          <div className="absolute left-0 top-0 w-[454px] h-[18px] bg-[#ffffff4d]"></div>
-        </div>
-      </div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      
-
-
-    </div>
-
-
-    {/*헬스케어 플랫폼 */}
-    <div className="absolute -translate-x-1/2 left-1/2 top-[2304px] w-[1360px] flex flex-wrap items-start justify-start">
-    
-      <div className="w-[1360px] h-[48px] shrink-0 flex flex-wrap items-center justify-center bg-[#ffffff4d] ">
-        <div className="text-[24px] leading-[24px] font-['Pretendard'] font-extrabold text-[#fff] text-center whitespace-nowrap">헬스케어 플랫폼</div>
-      </div>
-
-
-      <div className="w-[226.6px] h-[48px] shrink-0 border-[solid] border-#fff border-b border-t"></div>
-      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-[solid] border-#fff border ">
-        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">품목검토</div>
-      </div>
-      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-t border-b">
-        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">개발</div>
-      </div>
-      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-t border-b ">
-        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">시제품</div>
-      </div>
-      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-t border-b ">
-        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">인허가</div>
-      </div>
-      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center  border-t border-b">
-        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">출시</div>
-      </div>
-
-
-      <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-b">
-        <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">만성질환관리</div>
-      </div>
-      <div className="absolute left-[227px] top-[111px] w-[454px] h-[18px] shrink-0">
-        <div className="absolute left-0 top-0 w-[454px] h-[18px] bg-[#ffffff4d]"></div>
-      </div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-
-
-      <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-b">
-        <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">운동처방</div>
-      </div>
-      <div className="relative w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center">
-        <div className="absolute left-[1px] top-[15px] w-[454px] h-[18px] shrink-0">
-          <div className="absolute left-0 top-0 w-[454px] h-[18px] bg-[#ffffff4d]"></div>
-        </div>
-      </div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-
-
-      <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-b">
-        <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">반려동물 플랫폼</div>
-      </div>
-      <div className="relative w-[1100px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b">
-        <div className="absolute left-[1px] top-[15px] w-[454px] h-[18px] shrink-0">
-          <div className="absolute left-0 top-0 w-[300px] h-[18px] bg-[#ffffff4d]"></div>
-        </div>
-      </div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
-
-
-      
-    </div>
 
     {/*의약외품 개발 */}
     <div className="absolute -translate-x-1/2 left-1/2 top-[1080px] w-[1360px] flex flex-wrap items-start justify-start">
@@ -313,15 +194,18 @@ const Pipe = () => {
       </div>
 
 
-
       <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center  border-b border-r">
         <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">반려동물 스프레이</div>
       </div>
-      <img className="absolute left-[227px] top-[111px]" width="226" height="18" src={img5}></img>
+      <div className="relative w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center">
+        <div className="absolute left-[1px] top-[15px] w-[452px] h-[18px] shrink-0">
+          <div className="absolute left-0 top-0 w-[230px] h-[18px] bg-[#ffffff4d] rounded-r-full"></div>
+        </div>
+      </div>
       <div className="w-[227px] h-[48px] shrink-0"></div>
       <div className="w-[227px] h-[48px] shrink-0"></div>
       <div className="w-[227px] h-[48px] shrink-0"></div>
-      <div className="w-[227px] h-[48px] shrink-0"></div>
+
 
 
       <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center  border-b border-r">
@@ -329,7 +213,7 @@ const Pipe = () => {
       </div>
       <div className="relative w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center">
         <div className="absolute left-[1px] top-[15px] w-[452px] h-[18px] shrink-0">
-          <div className="absolute left-0 top-0 w-[452px] h-[18px] bg-[#ffffff4d]"></div>
+          <div className="absolute left-0 top-0 w-[452px] h-[18px] bg-[#ffffff4d] rounded-r-full"></div>
         </div>
       </div>
       <div className="w-[227px] h-[48px] shrink-0"></div>
@@ -342,7 +226,7 @@ const Pipe = () => {
       </div>
       <div className="relative w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center">
         <div className="absolute left-[1px] top-[15px] w-[452px] h-[18px] shrink-0">
-          <div className="absolute left-0 top-0 w-[452px] h-[18px] bg-[#ffffff4d]"></div>
+          <div className="absolute left-0 top-0 w-[452px] h-[18px] bg-[#ffffff4d] rounded-r-full"></div>
         </div>
       </div>
       <div className="w-[227px] h-[48px] shrink-0"></div>
@@ -355,7 +239,7 @@ const Pipe = () => {
       </div>
       <div className="relative w-[1100px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b">
         <div className="absolute left-[1px] top-[15px] w-[452px] h-[18px] shrink-0">
-          <div className="absolute left-0 top-0 w-[452px] h-[18px] bg-[#ffffff4d]"></div>
+          <div className="absolute left-0 top-0 w-[452px] h-[18px] bg-[#ffffff4d] rounded-r-full"></div>
         </div>
       </div>
     </div>
@@ -451,6 +335,130 @@ const Pipe = () => {
 
       
 
+    </div>
+
+    
+    {/*식품 개발 */}
+    <div className="absolute -translate-x-1/2 left-1/2 top-[1992px] w-[1360px] flex flex-wrap items-start justify-start">
+
+      <div className="w-[1360px] h-[48px] shrink-0 flex flex-wrap items-center justify-center bg-[#ffffff4d] ">
+        <div className="text-[24px] leading-[24px] font-['Pretendard'] font-extrabold text-[#fff] text-center whitespace-nowrap">식품 개발</div>
+      </div>
+
+
+      <div className="w-[227px] h-[48px] shrink-0 border-[solid] border-#fff border-t border-b border-r"></div>
+      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b border-t border-r ">
+        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">품목검토</div>
+      </div>
+      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b border-t border-r">
+        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">제품디자인</div>
+      </div>
+      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b border-t border-r ">
+        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">시제품</div>
+      </div>
+      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b border-t border-r ">
+        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">인허가</div>
+      </div>
+      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b border-t ">
+        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">출시</div>
+      </div>
+
+      
+      <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r">
+        <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify ">반려동물 음료수</div>
+      </div>
+      <div className="absolute left-[227px] top-[111px] w-[454px] h-[18px] shrink-0">
+        <div className="absolute left-0 top-0 w-[454px] h-[18px] bg-[#ffffff4d] rounded-r-full"></div>
+      </div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+
+
+      <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-t border-b">
+        <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">액상사료</div>
+      </div>
+      <div className="relative w-[1100px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b">
+        <div className="absolute left-[1px] top-[15px] w-[454px] h-[18px] shrink-0">
+          <div className="absolute left-0 top-0 w-[454px] h-[18px] bg-[#ffffff4d] rounded-r-full"></div>
+        </div>
+      </div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      
+
+
+    </div>
+
+
+    {/*헬스케어 플랫폼 */}
+    <div className="absolute -translate-x-1/2 left-1/2 top-[2304px] w-[1360px] flex flex-wrap items-start justify-start">
+    
+      <div className="w-[1360px] h-[48px] shrink-0 flex flex-wrap items-center justify-center bg-[#ffffff4d] ">
+        <div className="text-[24px] leading-[24px] font-['Pretendard'] font-extrabold text-[#fff] text-center whitespace-nowrap">헬스케어 플랫폼</div>
+      </div>
+
+
+      <div className="w-[226.6px] h-[48px] shrink-0 border-[solid] border-#fff border-b border-t"></div>
+      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-[solid] border-#fff border ">
+        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">품목검토</div>
+      </div>
+      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-t border-b">
+        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">개발</div>
+      </div>
+      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-t border-b ">
+        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">시제품</div>
+      </div>
+      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-t border-b ">
+        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">인허가</div>
+      </div>
+      <div className="w-[226.6px] h-[48px] shrink-0 flex flex-wrap items-center justify-center  border-t border-b">
+        <div className="text-[20px] leading-[24px] font-['Pretendard'] text-[#fff] text-center whitespace-nowrap">출시</div>
+      </div>
+
+
+      <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-b">
+        <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">만성질환관리</div>
+      </div>
+      <div className="absolute left-[227px] top-[111px] w-[454px] h-[18px] shrink-0">
+        <div className="absolute left-0 top-0 w-[454px] h-[18px] bg-[#ffffff4d] rounded-r-full"></div>
+      </div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+
+
+      <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-b">
+        <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">운동처방</div>
+      </div>
+      <div className="relative w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center">
+        <div className="absolute left-[1px] top-[15px] w-[454px] h-[18px] shrink-0">
+          <div className="absolute left-0 top-0 w-[454px] h-[18px] bg-[#ffffff4d] rounded-r-full"></div>
+        </div>
+      </div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+
+
+      <div className="w-[227px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-r border-b">
+        <div className="text-[20px] leading-[24px] font-['Montserrat']  text-[#fff] text-justify whitespace-nowrap">반려동물 플랫폼</div>
+      </div>
+      <div className="relative w-[1100px] h-[48px] shrink-0 flex flex-wrap items-center justify-center border-b">
+        <div className="absolute left-[1px] top-[15px] w-[454px] h-[18px] shrink-0">
+          <div className="absolute left-0 top-0 w-[300px] h-[18px] bg-[#ffffff4d] rounded-r-full"></div>
+        </div>
+      </div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+      <div className="w-[227px] h-[48px] shrink-0"></div>
+
+
+      
     </div>
 
     

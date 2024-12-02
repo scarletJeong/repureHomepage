@@ -16,7 +16,7 @@ import img8 from '../../assets/image 27213_1717.png'
 
 
 const Cancer = () => {
-	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] mx-auto flex flex-col items-center">
+	return (<div className="relative w-[1920px] min-w-[1440px] flex flex-col justify-start bg-[#fff] mx-auto  items-center" >
 
   {/*RnDtitle */}
   <RDTitle activeTab="항암치료"  />

@@ -1,10 +1,12 @@
 
 import { useState, useEffect } from 'react';
-
 import { Link } from 'react-router-dom';
 
 import Bottom from '../../components/Bottom';
 import Top from '../../components/Top';
+
+import './Home.css'
+
 
 import MedicalDiscussionImage1 from '../../assets/medical_discussion1.png';
 import MedicalDiscussionImage2 from '../../assets/medical_discussion2.png';
@@ -59,12 +61,11 @@ import image158_598 from '../../assets/image158_598.png'
 import logo1158_588 from '../../assets/logo1158_588.png'
 
 import arrow_right from '../../assets/arrow_right.png'
-
-import './Home.css'
-
 import ic_arrow from '../../assets/ic_arrow.png'
-
 import notice from '../../assets/04_notice166_360.png';
+import img10 from '../../assets/03_notice166_360.png';
+import akar from '../../assets/akar-icons_clock.png';
+import rightarror from '../../assets/arrow-right166_377.png';
 
 import panel1 from '../../assets/panel1.png';
 import panel2 from '../../assets/panel2.png';
@@ -75,6 +76,8 @@ import panel11 from '../../assets/panel1-1.png';
 import panel21 from '../../assets/panel2-1.png';
 import panel31 from '../../assets/panel3-1.png';
 import panel41 from '../../assets/panel4-1.png';
+
+
 
 
 const Test = () => {
@@ -206,8 +209,9 @@ const Test = () => {
 
 
 
-	return (<div className="relative max-w-[1920px] min-w-[1440px] mx-auto flex flex-col items-center" style={{width: "100%"}}>
-  <div className="absolute left-0 top-0 max-w-[1920px] min-w-[1440px] flex flex-col items-start justify-start" style={{width: "100%"}}>
+ return (<div className="relative max-w-[1920px] min-w-[1440px] mx-auto flex flex-col items-center">
+    
+    <div className="relative self-stretch h-[2844px] shrink-0 bg-[#6b6677] overflow-hidden">
     
     
     {/*first */}
@@ -373,6 +377,51 @@ const Test = () => {
 
     {/* notice */}
     <img width="1920" height="960" src={notice}></img>
+  <div className="flex flex-col items-center  max-w-[1920px] min-w-[1440px] "   style={{backgroundImage: `url(${img10})`, backgroundSize: "cover",backgroundPosition: "center",width: "100%", height : "960px" ,paddingTop: "180px", paddingBottom: "80px"}}>
+    <div className="flex flex-col items-center">
+
+	    <div className="flex flex-col items-start justify-start">
+	      <div className="self-stretch flex flex-col items-center  justify-start gap-[5px]">
+		      <div className="text-[16px] font-['Pretendard'] font-medium text-[#2d4198] " >공지사항</div>
+		      <div className="text-[40px] font-['Montserrat'] font-bold text-[#000]">REPURE NOTICE</div>
+	      </div>
+	    </div>
+      <div className="flex flex-col items-center text-center">
+        <div className="text-[16px] leading-[60px] font-['Pretendard'] text-[#888]">리퓨어 헬스케어 회사 관련 뉴스와 새로운 공지사항을 만나보세요.</div>
+      </div>
+
+
+      <div className="self-stretch flex flex-row items-center justify-start gap-[38px]"  style={{ marginTop: "60px" }}>
+        <div className="w-[428px] shrink-0 flex flex-col items-start justify-start gap-[40px] p-[20px] bg-[#fff]">
+          <div className="self-stretch text-[16px] leading-[20px] font-['Montserrat'] font-semibold text-[#122e70]">NEWS</div>
+          <div className="self-stretch flex flex-col items-start justify-start gap-[20px]">
+            <div className="self-stretch h-[64px] text-[24px] leading-[32px] font-['Pretendard'] font-semibold text-[#000]">퓨어헬스케어, 시니어 헬스케어 사업 고도화 다자간 업무협약 체결</div>
+            <div className="self-stretch h-[72px] text-[16px] leading-[24px] font-['Pretendard'] font-extralight text-[#666] text-justify">리퓨어헬스케어는 키즈노트, 단국대학교 기술지주자회사 단국상의원, 아카라라이프와 시니어 헬스케어 역할 고도화를 위해 다자간 업무 협약을 체결했다고 8일 밝혔다...</div>
+          </div>
+          <div className="self-stretch flex flex-row items-center justify-between">
+            <div className="flex flex-row items-center justify-start gap-[4px]">
+              <img width="12" height="12" src={akar}></img>
+              <div className="text-[12px] leading-[25px] font-['Maven_Pro'] text-[#999] whitespace-nowrap">2024-04-08</div>
+            </div>
+            <div className="flex flex-row items-center justify-start gap-[10px] py-[8px] px-[20px] bg-[#122e70] rounded-[33px]">
+            <a href="https://www.techm.kr/news/articleView.html?idxno=122789" target="_blank" className="text-[12px] leading-[100%] font-['Montserrat'] text-[#fff] whitespace-nowrap">View more</a>
+              <img width="16" height="16" src={rightarror}></img>
+            </div>
+          </div>
+        </div>
+        <div className="relative w-[428px] self-stretch shrink-0 flex flex-col items-start justify-start gap-[40px] p-[20px] bg-[#fff]">
+          <div className="self-stretch text-[16px] leading-[20px] font-['Montserrat'] font-semibold text-[#122e70]">NOTICE</div>
+          <div className="self-stretch flex flex-col items-start justify-start gap-[20px]">
+            <div className="self-stretch h-[64px] text-[24px] leading-[32px] font-['Pretendard'] font-semibold text-[#000]">공지사항</div>
+            <div className="self-stretch h-[72px] text-[16px] leading-[24px] font-['Pretendard'] font-extralight text-[#666] text-justify">조금만 기다려주시면 새로운 소식으로 만나뵙겠습니다</div>
+          </div>
+          <div className="absolute left-[20px] top-[276px] w-[388px]"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
 
 

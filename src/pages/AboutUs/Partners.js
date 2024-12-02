@@ -55,7 +55,7 @@ import Bottom from '../../components/Bottom';
 
 const Partners = () => {
 	return (
-        <div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] mx-auto flex flex-col items-center">
+        <div className="relative w-[1920px] min-w-[1440px] flex flex-col justify-start bg-[#fff] mx-auto  items-center" >
             <AboutUsTitle activeTab="파트너쉽" />
             <div className="relative self-stretch h-[2425px] shrink-0 overflow-hidden">
                 <img className="absolute left-0 right-0 top-0 bottom-0" width="1920" height="2425" src={bg7_2679}></img>

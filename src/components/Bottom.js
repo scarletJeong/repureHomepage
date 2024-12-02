@@ -11,8 +11,7 @@ import goOpentarget from '../assets/opentarget 27_4974.png'
 const Bottom = () => {
 
   return (
-
-    <div className="relative self-stretch h-[480px] shrink-0 bg-[#f8f8f8]">
+    <div className="relative self-stretch h-[480px] shrink-0 bg-[#f8f8f8]  max-w-[1920px] min-w-[1440px]" style={{width: "100%"}}>
         <div className="absolute left-[554px] top-[105px] w-[600px] flex flex-col items-start justify-start gap-[24px]">
         <div className="self-stretch text-[14px] leading-[20px] font-['Pretendard'] font-semibold text-[#5f6368]">리퓨어 헬스케어 Co. <br/>서울특별시 금천구 가산디지털 1로 25, 1806호</div>
         <div className="flex flex-col items-start justify-start gap-[2px]">
@@ -77,7 +76,7 @@ const Bottom = () => {
         <img src={goOpentarget} alt="Open Target" className="w-[81px] h-[24px]" />
       </a>
     </div>
-    
+
     {/*스크롤 */}
     <ScrollToTop />
     

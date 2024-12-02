@@ -11,7 +11,7 @@ import medi3 from '../../assets/Rectangle 72184_563.png'
 
 
 const Medicine = () => {
-	return (<div className="w-[1920px] flex flex-col items-start justify-start bg-[#fff] mx-auto flex flex-col items-center">
+	return (<div className="relative w-[1920px] min-w-[1440px] flex flex-col justify-start bg-[#fff] mx-auto  items-center" >
   
   {/*title */}
   {/* Business Title */}
